@@ -8,8 +8,8 @@ body {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: 600;
+  letter-spacing: 6px;
   text-transform: uppercase;
   color: #FFCE0A;
 }
@@ -20,7 +20,16 @@ h2 {
   font-style: italic;
   font-size: 28px;
   letter-spacing: 1px;
-  color: #F64F3C;
+  color: #11466A;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #11466A;
 }
 
 /*------------ header/navbar ------------*/
@@ -48,19 +57,27 @@ h2 {
 
 .jumbotron {
   background-color: transparent;
+  padding-top: 50%;
 }
 
 /*------------ hero text ------------*/
 
 .hero-sub {
   text-align: center;
+  font-size: 32px;
 }
 
+.icons {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: #11466A;
+ 
+}
 /*------------ footer ------------*/
 
 footer {
   height: 80px;
-  background-color:#fff;
   margin: 0;
 }
 
@@ -76,9 +93,9 @@ footer {
   font-size: 20px;
   line-height: 7px;
   text-align: center;
-  color: #777777;
+  color: #11466A;
 }
 
 .social-links i:hover {
-  color: #E2725B;
+  color: #FFCE0A;
 }
