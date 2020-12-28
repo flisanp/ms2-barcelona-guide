@@ -192,7 +192,7 @@ https://www.epocaceramic.com
 
 #### Media
 
-- Hero Image on Home page by [Tom Crew on Unsplash](https://unsplash.com/@tomcrewceramics)
+- Hero Image on Home page by [Vitor Monteiro on Unsplash](https://unsplash.com/@vitorhugomonteiro) 
 - All photos on Gallery page by [Tom Crew on Unsplash](https://unsplash.com/@tomcrewceramics)
 - Photo on Stockist page by [Tom Crew on Unsplash](https://unsplash.com/@tomcrewceramics)
 - Photo on Contact page by [Gustavo Fring on Pexels](https://www.pexels.com/sv-se/foto/ljus-kvinna-konst-kreativ-4241339/)
