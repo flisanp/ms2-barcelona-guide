@@ -60,12 +60,17 @@ h3 {
   padding-top: 50%;
 }
 
-/*------------ hero text ------------*/
+.hero-text {
+   text-align: center; 
+}
 
 .hero-sub {
   text-align: center;
   font-size: 32px;
 }
+
+/*------------ hero to-do section ------------*/
+
 
 .icons {
   width: 70px;
@@ -74,6 +79,44 @@ h3 {
   color: #11466A;
  
 }
+
+/*code credits for auto-sizing grid from: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));   
+}
+
+
+.btn-pos {
+  margin-top: 20px;
+}
+
+.button-text {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  color: #fff;
+  background: #11466A;
+  border-color: transparent;
+}
+
+.button-text:hover {
+  color: #fff;
+  background: #FFCE0A;
+  border-color: #FFCE0A;
+}
+
+/*------------ map ------------*/
+
+div#map {
+    min-height: 360px;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+}
+
 /*------------ footer ------------*/
 
 footer {
