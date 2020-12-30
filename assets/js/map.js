@@ -5,9 +5,7 @@ function initMap() {
     zoom: 12,
     mapId: 23105,
   });
-
-
-
+}
 
 const iconBase =
     "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
@@ -24,7 +22,7 @@ const iconBase =
   };
 
   //restaurants
-  const features = [
+  var eat = [
     {
       position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
       type: "eat",
@@ -49,6 +47,10 @@ const iconBase =
       position: new google.maps.LatLng(41.38164, 2.17204), //Direkte Boqueria
       type: "eat",
     },
+
+    ];
+
+    var sleep = [
     //hotels
     {  
       position: new google.maps.LatLng(41.36852779108305, 2.190012429899792), //W Barcelona
@@ -86,6 +88,10 @@ const iconBase =
       position: new google.maps.LatLng(41.382892906328806, 2.1793504801022032), //Mercer Hotel Barcelona
       type: "sleep",
     },
+
+    ];
+
+    var discover = [
     //sights
      {
       position: new google.maps.LatLng(41.40432587365964, 2.174218047853699), //Sagrada Familia
@@ -119,13 +125,59 @@ const iconBase =
 
     ];
 
-  // Create markers.
-  for (let i = 0; i < features.length; i++) {
+
+  var marker, i;
+  var markers = [];
+
+  $("#eat").click(function() {
+    clearMarkers();
+    map.setZoom(12);
+    map.setCenter({
+      lat: 41.38879,
+      lng: 2.15899
+    });
+
+  // Create markers for eat.
+  for (let i = 0; i < eat.length; i++) {
     const marker = new google.maps.Marker({
-      position: features[i].position,
-      icon: icons[features[i].type].icon,
+      position: eat[i].position,
+      icon: icons[eat[i].type].icon,
       map: map,
     });
   }
+  });
+
+
+
+//Clear away any existing markers 
+function clearMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+      markers[i].setMap(null);
+    }
+    markers = [];
 }
 
+  
+
+
+//  Place markers for the locations of the hotels and clear out previous markers 
+// Create markers for sleep.
+  for (let i = 0; i < sleep.length; i++) {
+    const marker = new google.maps.Marker({
+      position: sleep[i].position,
+      icon: icons[sleep[i].type].icon,
+      map: map,
+    });
+  }
+
+  markers.push(marker);
+    
+
+// Create markers for discover.
+  for (let i = 0; i < discover.length; i++) {
+    const marker = new google.maps.Marker({
+      position: discover[i].position,
+      icon: icons[discover[i].type].icon,
+      map: map,
+    });
+}
