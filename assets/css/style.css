@@ -7,7 +7,7 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -18,17 +18,17 @@ h2 {
   font-family: 'Lora', sans-serif;
   font-weight: 500;
   font-style: italic;
-  font-size: 32px;
+  font-size: 30px;
   letter-spacing: 1px;
   color: #11466A;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
   font-weight: 200;
+  font-style: italic;
   letter-spacing: 2px;
-  text-transform: uppercase;
   color: #11466A;
 }
 
@@ -75,11 +75,16 @@ h3 {
 
 .hero-text {
    text-align: center; 
-   padding-top: 50%;
+   padding-top: 20%;
 }
 
 .hero-sub {
   text-align: center;
+}
+
+.hero-info-text {
+    padding-top: 1rem;
+    text-align: center;
 }
 
 /*------------ hero to-do section ------------*/
@@ -100,7 +105,7 @@ h3 {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  font-size: 28px;
+  font-size: 20px;
   color: #fff;
   background: #11466A;
   border-color: transparent;
@@ -121,6 +126,32 @@ div#map {
 #map {
   height: 700px;
   width: 100%;
+}
+
+/*------------ weather ------------*/
+
+.weather-container {
+  height: 100vh;
+  background: url("../images/weather.jpg") no-repeat bottom right fixed;
+  background-size: cover;
+  padding-bottom: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.weather {
+    padding-top: 70%;  
+}
+
+.weather-text{
+   text-align: left; 
+   font-size: 50px;
+}
+
+.weather-sub{
+  text-align: left;
+  font-size: 28px;
 }
 
 /*------------ scroll to top button ------------*/
@@ -144,7 +175,6 @@ div#map {
 #myBtn:hover {
   background-color: #FFCE0A; 
 }
-
 
 /*------------ footer ------------*/
 
@@ -178,39 +208,31 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+.hero-text {
+   padding-top: 20%;
+}
+
+h1 {
+  font-size: 60px;
+
+}
+
+h2 {
+  font-size: 36px;
+
+}
+
+.button-text {
+  font-size: 28px;
+}
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+.hero-text {
+   padding-top: 50%;
+
 }
-
-
-
-.weather-container {
-  height: 100vh;
-  background: url("../images/weather.jpg") no-repeat bottom right fixed;
-  background-size: cover;
-  padding-bottom: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
 }
-
-.weather {
-    padding-top: 70%;
-    
-}
-
-.weather-text{
-   text-align: left; 
-   font-size: 50px;
-  
-}
-
-.weather-sub{
-  text-align: left;
-  font-size: 28px;
-}
-
