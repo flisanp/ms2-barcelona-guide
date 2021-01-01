@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #777777;
+  color: #555;
 }
 
 h1 {
@@ -18,7 +18,7 @@ h2 {
   font-family: 'Lora', sans-serif;
   font-weight: 500;
   font-style: italic;
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 1px;
   color: #11466A;
 }
@@ -34,15 +34,28 @@ h3 {
 
 /*------------ header/navbar ------------*/
 
+.nav-link{
+  color: #11466A !important;
+}
+
 .menu {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 16px;
-  color: #777777;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-right: 20px;
 }
+
+/* code credits for override btn color in Bootstrap: https://stackoverflow.com/questions/28261287/how-to-change-btn-color-in-bootstrap*/
+.menu a:hover {
+  color: #FFCE0A!important;
+}
+
+.active {
+  color: #FFCE0A!important;
+}
+
 /*------------ hero image ------------*/
 
 .hero-container {
@@ -67,7 +80,6 @@ h3 {
 
 .hero-sub {
   text-align: center;
-  font-size: 32px;
 }
 
 /*------------ hero to-do section ------------*/
@@ -78,7 +90,6 @@ h3 {
   height: 70px;
   text-align: center;
   color: #11466A;
- 
 }
 
 .btn-pos {
@@ -89,6 +100,7 @@ h3 {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
+  font-size: 28px;
   color: #fff;
   background: #11466A;
   border-color: transparent;
@@ -110,6 +122,29 @@ div#map {
   height: 700px;
   width: 100%;
 }
+
+/*------------ scroll to top button ------------*/
+
+/* code for scroll to top button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 55px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: #11466A; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; /* Some padding */
+  font-size: 40px; 
+}
+
+#myBtn:hover {
+  background-color: #FFCE0A; 
+}
+
 
 /*------------ footer ------------*/
 
@@ -136,3 +171,46 @@ footer {
 .social-links i:hover {
   color: #FFCE0A;
 }
+
+/*------------ media queries ------------*/
+
+/*Device breakpoints taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+
+
+.weather-container {
+  height: 100vh;
+  background: url("../images/weather.jpg") no-repeat bottom right fixed;
+  background-size: cover;
+  padding-bottom: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.weather {
+    padding-top: 70%;
+    
+}
+
+.weather-text{
+   text-align: left; 
+   font-size: 50px;
+  
+}
+
+.weather-sub{
+  text-align: left;
+  font-size: 28px;
+}
+
