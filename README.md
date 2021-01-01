@@ -115,6 +115,10 @@ I wanted the ceramist to somehow be able to sell her work through the website bu
 
 #### During Development I Fixed The Following Bugs
 
+- Trouble with linking buttons to map and showing the correct markers
+
+- Info window on markers would not work
+
  - Mobile responsiveness for about page not worked as intended.
 Image appears too small and does not move to underneath the text.
 	- changed setting from `col-6` to `col-12 col-lg-6` 
@@ -127,18 +131,6 @@ Image appears too small and does not move to underneath the text.
 Image appears too small and does not move to underneath the text.
 	- changed setting from `col-6` to `col-12 col-lg-6` 
 
- - Header remained transparent when scrolling which made the menu difficult to read.
-	- Added `bg-white` to `navbar` class.
-
- - Unable to customize color on navbar menu when hovering.
-	- Added `!important;`  to `.menu a`
-
- - Unable to customize color on active pages.
-	- Added `!important;`  to `.active`
-
- - Send Button in the form on the contact page was hidden behind the image on small devices.
-   - Removed `position:absolute` from `.button-text-form`
-	
  - Mobile responsiveness for hero image not working + Mobile responsiveness for hero text not working. Text size does not decrease and is overlapping.
     - Added class name `hero-container` to `<div class="container-fluid">` and linked the image with CSS instead of `<img>` element in the html like I did first. Added class name `jumbotron` from Bootstrap to my section element and placed text and button inside that section instead of in seperate `div` elements like I did from the beginning.
 
