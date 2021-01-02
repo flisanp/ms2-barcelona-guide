@@ -93,7 +93,7 @@ h3 {
 
 /*------------ hero to-do section ------------*/
 
-/*https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
+/*code for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
 
 .btn {
   width: 150px !important;
@@ -177,7 +177,6 @@ div#map {
   background-color: #11466A; 
   color: white; 
   cursor: pointer; 
- 
   font-size: 40px; 
 }
 

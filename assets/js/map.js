@@ -4,18 +4,19 @@ var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 41.38879, lng: 2.15899 }, 
-    zoom: 13,
+    zoom: 12,
   });
 }
 
+//icons for map
 var iconBase =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/";
+    "https://flisanp.github.io/ms2-barcelona-guide/assets/images/"; 
   var icons = {
     eat: {
-      icon: iconBase + "parking_lot_maps.png",
+      icon: iconBase + "fork.png",
     },
     sleep: {
-      icon: iconBase + "library_maps.png",
+      icon: iconBase + "B.png",
     },
     discover: {
       icon: iconBase + "info-i_maps.png",
@@ -24,20 +25,24 @@ var iconBase =
       icon: iconBase + "parking_lot_maps.png",
     },
   };
+  
 
-  //restaurants
+  //restaurant locations
   var eat = [
     {
       position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
       type: "eat",
+      content:"<img src='assets/images/map-images/ano_150px.jpg'><h4>Ano Mera</h4><a href='index.html#ano-info'>Click here to learn more Ano Mera</a>",
     },
     {
       position: new google.maps.LatLng(41.38198, 2.18383), //The Green Spot
       type: "eat",
+       content:"<img src='assets/images/map-images/ano_150px.jpg'><h4>Ano Mera</h4><a href='index.html#ano-info'>Click here to learn more Ano Mera</a>",
     },
     {
       position: new google.maps.LatLng(41.37591, 2.15682), //Tickets
       type: "eat",
+       content:"<img src='assets/images/map-images/ano_150px.jpg'><h4>Ano Mera</h4><a href='index.html#ano-info'>Click here to learn more Ano Mera</a>",
     },
     {
       position: new google.maps.LatLng(41.38952, 2.18171), //Picnic
@@ -54,8 +59,8 @@ var iconBase =
 
     ];
 
+    //hotel locations
     var sleep = [
-    //hotels
     {  
       position: new google.maps.LatLng(41.36852779108305, 2.190012429899792), //W Barcelona
       type: "sleep",
@@ -95,8 +100,8 @@ var iconBase =
 
     ];
 
+    //sight locations
     var discover = [
-    //sights
      {
       position: new google.maps.LatLng(41.40432587365964, 2.174218047853699), //Sagrada Familia
       type: "discover",
@@ -127,8 +132,8 @@ var iconBase =
     },
     ];
 
+    //shop locations
     var shop = [
-    //shop
      {
       position: new google.maps.LatLng(41.383871205004745, 2.168845377253543), //La Central
       type: "shop",
@@ -167,7 +172,9 @@ var iconBase =
     },
     ];
 
-
+    
+// Create markers for restaurants
+//https://developers.google.com/maps/documentation/javascript/markers
 
   var marker, i;
   var markers = [];
@@ -180,22 +187,16 @@ var iconBase =
       lng: 2.15899
     });
 
-  // Create markers for eat.
   for (let i = 0; i < eat.length; i++) {
       marker = new google.maps.Marker({
       position: eat[i].position,
        animation: google.maps.Animation.DROP,
       icon: icons[eat[i].type].icon,
-      title: eat[i][2],
       map: map,
     });
- 
     markers.push(marker);
-
-      }
+}
   });
-
-
 
 //Clear away any existing markers 
 function clearMarkers() {
@@ -205,6 +206,7 @@ function clearMarkers() {
     markers = [];
 }
 
+// Create markers for hotels
   $("#sleep").click(function() {
     clearMarkers();
     map.setZoom(13);
@@ -213,7 +215,6 @@ function clearMarkers() {
       lng: 2.15899
     }); 
 
-// Create markers for sleep.
   for (let i = 0; i < sleep.length; i++) {
       marker = new google.maps.Marker({
       position: sleep[i].position,
@@ -221,13 +222,11 @@ function clearMarkers() {
       icon: icons[sleep[i].type].icon,
       map: map,
     });
-    
-  markers.push(marker);
-    
-      }
+    markers.push(marker);  
+}
   });
 
-  //Clear away any existing markers 
+//Clear away any existing markers 
 function clearMarkers() {
     for (let i = 0; i < markers.length; i++) {
       markers[i].setMap(null);
@@ -235,6 +234,7 @@ function clearMarkers() {
     markers = [];
 }
   
+// Create markers for sights
 $("#discover").click(function() {
     clearMarkers();
     map.setZoom(13);
@@ -243,7 +243,6 @@ $("#discover").click(function() {
       lng: 2.15899
     });
 
-// Create markers for discover.
   for (let i = 0; i < discover.length; i++) {
      marker = new google.maps.Marker({
       position: discover[i].position,
@@ -252,11 +251,10 @@ $("#discover").click(function() {
       map: map,
     });
     markers.push(marker);
-
  }
   });
 
-    //Clear away any existing markers 
+//Clear away any existing markers 
 function clearMarkers() {
     for (let i = 0; i < markers.length; i++) {
       markers[i].setMap(null);
@@ -264,6 +262,7 @@ function clearMarkers() {
     markers = [];
 }
 
+// Create markers for shops
   $("#shop").click(function() {
     clearMarkers();
     map.setZoom(13);
@@ -272,7 +271,6 @@ function clearMarkers() {
       lng: 2.15899
     });
 
-// Create markers for shop.
   for (let i = 0; i < shop.length; i++) {
       marker = new google.maps.Marker({
       position: shop[i].position,
@@ -281,6 +279,7 @@ function clearMarkers() {
       map: map,
     });
     markers.push(marker);
-
  }
   });
+
+ 
