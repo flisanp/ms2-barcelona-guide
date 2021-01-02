@@ -4,7 +4,7 @@ var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 41.38879, lng: 2.15899 }, 
-    zoom: 12,
+    zoom: 13,
   });
 }
 
@@ -19,6 +19,9 @@ var iconBase =
     },
     discover: {
       icon: iconBase + "info-i_maps.png",
+    },
+     shop: {
+      icon: iconBase + "parking_lot_maps.png",
     },
   };
 
@@ -122,8 +125,46 @@ var iconBase =
       position: new google.maps.LatLng(41.380424660929904, 2.189755392339966), //La Barceloneta
       type: "discover",
     },
-    //shop
+    ];
 
+    var shop = [
+    //shop
+     {
+      position: new google.maps.LatLng(41.383871205004745, 2.168845377253543), //La Central
+      type: "shop",
+    },
+    {
+      position: new google.maps.LatLng(41.392742332196505, 2.176602149798577), //Sivasdescalzo
+      type: "shop",
+    },
+    {
+      position: new google.maps.LatLng(41.38335015596444, 2.1681139075210356), //Nuovum
+      type: "shop",
+    },
+    {
+      position: new google.maps.LatLng(41.37693102787546, 2.1622144494409516), //Llibreria Calders bookshop
+      type: "shop",
+    },
+    {
+      position: new google.maps.LatLng(41.38252950814032, 2.1658988633922753), //Les Topettes
+      type: "shop",
+    },
+    {
+      position: new google.maps.LatLng(41.38464200260276, 2.174994406150571), //La Capell
+      type: "shop",
+    },
+    {
+      position: new google.maps.LatLng(41.384489403245425, 2.1799833344975283), //Après Ski
+      type: "shop",
+    },
+     {
+      position: new google.maps.LatLng(41.38510575043293, 2.183773406972111), //Bobo Choses Barcelona Born
+      type: "shop",
+    },
+     {
+      position: new google.maps.LatLng(41.37882131918473, 2.1321906611337673), //Flowers by Bornay
+      type: "shop",
+    },
     ];
 
 
@@ -133,7 +174,7 @@ var iconBase =
 
   $("#eat").click(function() {
     clearMarkers();
-    map.setZoom(12);
+    map.setZoom(13);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
@@ -141,12 +182,17 @@ var iconBase =
 
   // Create markers for eat.
   for (let i = 0; i < eat.length; i++) {
-    var marker = new google.maps.Marker({
+      marker = new google.maps.Marker({
       position: eat[i].position,
+       animation: google.maps.Animation.DROP,
       icon: icons[eat[i].type].icon,
+      title: eat[i][2],
       map: map,
     });
-  }
+ 
+    markers.push(marker);
+
+      }
   });
 
 
@@ -159,27 +205,79 @@ function clearMarkers() {
     markers = [];
 }
 
-  
+  $("#sleep").click(function() {
+    clearMarkers();
+    map.setZoom(13);
+    map.setCenter({
+      lat: 41.38879,
+      lng: 2.15899
+    }); 
+
 // Create markers for sleep.
   for (let i = 0; i < sleep.length; i++) {
-    var marker = new google.maps.Marker({
+      marker = new google.maps.Marker({
       position: sleep[i].position,
       icon: icons[sleep[i].type].icon,
       map: map,
     });
-  }
-
+    
   markers.push(marker);
     
+      }
+  });
+
+  //Clear away any existing markers 
+function clearMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+      markers[i].setMap(null);
+    }
+    markers = [];
+}
+  
+$("#discover").click(function() {
+    clearMarkers();
+    map.setZoom(13);
+    map.setCenter({
+      lat: 41.38879,
+      lng: 2.15899
+    });
 
 // Create markers for discover.
   for (let i = 0; i < discover.length; i++) {
-    var marker = new google.maps.Marker({
+     marker = new google.maps.Marker({
       position: discover[i].position,
       icon: icons[discover[i].type].icon,
       map: map,
     });
+    markers.push(marker);
+
+ }
+  });
+
+    //Clear away any existing markers 
+function clearMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+      markers[i].setMap(null);
+    }
+    markers = [];
 }
 
+  $("#shop").click(function() {
+    clearMarkers();
+    map.setZoom(13);
+    map.setCenter({
+      lat: 41.38879,
+      lng: 2.15899
+    });
 
+// Create markers for shop.
+  for (let i = 0; i < shop.length; i++) {
+      marker = new google.maps.Marker({
+      position: shop[i].position,
+      icon: icons[shop[i].type].icon,
+      map: map,
+    });
+    markers.push(marker);
 
+ }
+  });
