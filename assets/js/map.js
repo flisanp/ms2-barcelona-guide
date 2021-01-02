@@ -217,6 +217,7 @@ function clearMarkers() {
   for (let i = 0; i < sleep.length; i++) {
       marker = new google.maps.Marker({
       position: sleep[i].position,
+      animation: google.maps.Animation.DROP,
       icon: icons[sleep[i].type].icon,
       map: map,
     });
@@ -246,6 +247,7 @@ $("#discover").click(function() {
   for (let i = 0; i < discover.length; i++) {
      marker = new google.maps.Marker({
       position: discover[i].position,
+      animation: google.maps.Animation.DROP,
       icon: icons[discover[i].type].icon,
       map: map,
     });
@@ -274,6 +276,7 @@ function clearMarkers() {
   for (let i = 0; i < shop.length; i++) {
       marker = new google.maps.Marker({
       position: shop[i].position,
+      animation: google.maps.Animation.DROP,
       icon: icons[shop[i].type].icon,
       map: map,
     });
