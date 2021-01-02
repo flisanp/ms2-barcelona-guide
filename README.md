@@ -3,11 +3,11 @@
 
 # Barcelona City Guide
 
-[A live version of the page can be viewed here]
+[A live version of the page can be viewed here](https://flisanp.github.io/ms2-barcelona-guide/)
 
 ![mockup image]
 
-This website is a city guide to Barcelona and aims to provide information about the city to users who are planning to visit or are currently visiting Barcelona. Users can navigate through Google Maps to get information about tourist attractions, restaurants, hotels and shops.
+This website is a city guide to Barcelona and aims to provide information about the city to users who are planning to visit or are currently visiting Barcelona. Users can navigate through Google Maps to get top picks for restaurants, tourist attractions, hotels and shops.
 
 
 # UX
