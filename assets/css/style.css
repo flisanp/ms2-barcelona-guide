@@ -217,9 +217,6 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-.hero-text {
-   padding-top: 20%;
-}
 
 h1 {
   font-size: 60px;
@@ -248,7 +245,7 @@ h2 {
 @media only screen and (min-width: 992px) {
 
 .hero-text {
-   padding-top: 40%;
+   padding-top: 30%;
 
 }
 }

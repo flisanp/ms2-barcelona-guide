@@ -1,6 +1,8 @@
+var map;
+
 /// map 
 function initMap() {
- var map = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 41.38879, lng: 2.15899 }, 
     zoom: 12,
   });
@@ -158,7 +160,6 @@ function clearMarkers() {
 }
 
   
-//  Place markers for the locations of the hotels and clear out previous markers 
 // Create markers for sleep.
   for (let i = 0; i < sleep.length; i++) {
     var marker = new google.maps.Marker({
