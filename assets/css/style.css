@@ -58,6 +58,10 @@ h3 {
 
 /*------------ hero image ------------*/
 
+.container-fluid {
+    padding-left: 0;
+}
+
 .hero-container {
   height: 100vh;
   background: url("../images/barcelona-hero-image.jpg") no-repeat bottom right fixed;
@@ -89,12 +93,17 @@ h3 {
 
 /*------------ hero to-do section ------------*/
 
+/*https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
+
+.btn {
+  width: 150px !important;
+}
 
 .icons {
-  width: 70px;
-  height: 70px;
-  text-align: center;
-  color: #11466A;
+  width: 20px;
+  height: 20px;
+  color: white;
+  
 }
 
 .btn-pos {
@@ -105,7 +114,7 @@ h3 {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
   background: #11466A;
   border-color: transparent;
@@ -223,7 +232,14 @@ h2 {
 }
 
 .button-text {
-  font-size: 28px;
+  font-size: 26px;
+}
+
+.btn {
+  width: 180px !important;
+}
+.container-fluid {
+    padding-left: 15px;
 }
 
 }
@@ -232,7 +248,7 @@ h2 {
 @media only screen and (min-width: 992px) {
 
 .hero-text {
-   padding-top: 50%;
+   padding-top: 40%;
 
 }
 }
