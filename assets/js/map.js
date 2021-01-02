@@ -13,7 +13,7 @@ var iconBase =
     "https://flisanp.github.io/ms2-barcelona-guide/assets/images/"; 
   var icons = {
     eat: {
-      icon: iconBase + "fork.png",
+      icon: iconBase + "restaurant.png",
     },
     sleep: {
       icon: iconBase + "B.png",
