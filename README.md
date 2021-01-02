@@ -31,9 +31,9 @@ This website is a city guide to Barcelona and aims to provide information about 
 
 
 #### Design 
-I wanted the site to be easy navigated with a clean and minimalistic design. The colors I’ve used for the project is a light grey, #777777, and a warm terracotta, #E2725B. I chose these colors because they are easy to read on screen and also the two most common colors on clay that’s used for pottery which gives the site an earthy tone and a thought through theme.  
-The images used throughout the site is carefully choosen and is of great importance to showcase the ceramist work and to give a feeling about who she is. The photos of her work is unified in their visual appearence to give a professional touch to the site and the photos of the ceramist is ment to be more personalized. The purpose of the hero image on the landing page is to give a calm first impression and also show the skills of the ceramist. 
-All images sourced via [Unsplash](https://unsplash.com/) and [Pexels](https://www.pexels.com/).
+My main colors for the project is yellow, #FFCE0A, and blue, #11466A, and are supposed to represent the sun and the ocean as this is something I strongly associate with Barcelona. The yellow can also be found in the flag of Catalonia and the blue is recurring in Gaudís mosaic which can be seen scattered over large parts of the city. In fact you can hardly talk about Barcelona without mentioning Gaudí and that is why I have choosen the iconic image over Parc Güell as my hero image that will greet you when you enter the site. 
+I wanted the design to be easy navigated and for the user to immdiately understand what the purpose of the site is. Four different buttons with categories that are linked straight to the map depending on what you’re intrested in finding in the city. For example if you’re intrested in finding restaurants you click on the button called EAT and you will get locations on the map for my top picks. When you click on the markers you will open a info window with the name of the restaurant and a link to the website.
+
 
 #### Wireframes
 - [Home](https://github.com/flisanp/ms1-ceramic-studio/blob/1c78496558ba3f71e3a4b053decec4315fc89053/readme%20assets/wireframes/home.png) 
@@ -133,10 +133,13 @@ No errors or warnings to show.
 https://jigsaw.w3.org/css-validator/
 No errors or warnings to show.
 
+#### JS Testing
+https://jshint.com/
+
 # Deployment
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 1. Navigate to flisanp repositories.
-2. Select the one that is called ms1-ceramic-studio from the list.
+2. Select the one that is called ms2-barcelona-guide from the list.
 3. Click on settings in the menu that is located to the top right.
 4. Scroll down to "GitHub Pages"
 5. Under "Source", Select Master Branch from the drop-down menu.
@@ -144,7 +147,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 ### How To Run The Code Locally
 1. Log inte Gitpod with your account.
-2. Navigate to the [repository](https://github.com/flisanp/ms1-ceramic-studio).
+2. Navigate to the [repository](https://github.com/flisanp/ms2-barcelona-guide).
 3. Click the green GitPod button on the top right.
 4. A new workspace will be created.
 
