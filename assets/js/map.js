@@ -17,16 +17,16 @@ var iconBase =
 
   var icons = {
     eat: {
-      icon: iconBase + "restaurant.svg",  
+      icon: iconBase + "food.svg",  
     },
     sleep: {
       icon: iconBase + "lodging.svg",
     },
     discover: {
-      icon: iconBase + "info-i_maps.png",
+      icon: iconBase + "sights.svg",
     },
      shop: {
-      icon: iconBase + "parking_lot_maps.png",
+      icon: iconBase + "shopping.svg",
     },
   };
   
@@ -185,7 +185,7 @@ var iconBase =
 
   $("#eat").click(function() {
     clearMarkers();
-    map.setZoom(13);
+    map.setZoom(14);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
@@ -213,7 +213,7 @@ function clearMarkers() {
 // Create markers for hotels
   $("#sleep").click(function() {
     clearMarkers();
-    map.setZoom(13);
+    map.setZoom(14);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
@@ -241,7 +241,7 @@ function clearMarkers() {
 // Create markers for sights
 $("#discover").click(function() {
     clearMarkers();
-    map.setZoom(13);
+    map.setZoom(14);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
@@ -269,7 +269,7 @@ function clearMarkers() {
 // Create markers for shops
   $("#shop").click(function() {
     clearMarkers();
-    map.setZoom(13);
+    map.setZoom(14);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
