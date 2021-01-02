@@ -13,15 +13,14 @@ function initMap() {
 
 
 var iconBase =
-    "https://flisanp.github.io/ms2-barcelona-guide/assets/images/"; 
+    "https://flisanp.github.io/ms2-barcelona-guide/assets/images/icons-map/"; 
 
   var icons = {
     eat: {
-      icon: iconBase + "restaurant2.png", 
-      
+      icon: iconBase + "restaurant.svg",  
     },
     sleep: {
-      icon: iconBase + "B.png",
+      icon: iconBase + "lodging.svg",
     },
     discover: {
       icon: iconBase + "info-i_maps.png",
