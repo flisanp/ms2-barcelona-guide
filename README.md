@@ -115,24 +115,14 @@ I wanted the ceramist to somehow be able to sell her work through the website bu
 
 #### During Development I Fixed The Following Bugs
 
-- Trouble with linking buttons to map and showing the correct markers
+- Google Maps would not load properly.
+    - InitMap being called in the `<body>` instead of as a callback function: `<body onload="initMap()">`
+
+- Trouble with linking buttons to map and showing the correct markers.
+    - markers.push(marker) code was in the wrong place, moved it to inside the preceding for loop.
 
 - Info window on markers would not work
 
- - Mobile responsiveness for about page not worked as intended.
-Image appears too small and does not move to underneath the text.
-	- changed setting from `col-6` to `col-12 col-lg-6` 
-
- - Mobile responsiveness for stockists page not worked as intended.
-Image appears too small and does not move to underneath the text.
-	- changed setting from `col-6` to `col-12 col-lg-6` 
-
- - Mobile responsiveness for contact page not worked as intended.
-Image appears too small and does not move to underneath the text.
-	- changed setting from `col-6` to `col-12 col-lg-6` 
-
- - Mobile responsiveness for hero image not working + Mobile responsiveness for hero text not working. Text size does not decrease and is overlapping.
-    - Added class name `hero-container` to `<div class="container-fluid">` and linked the image with CSS instead of `<img>` element in the html like I did first. Added class name `jumbotron` from Bootstrap to my section element and placed text and button inside that section instead of in seperate `div` elements like I did from the beginning.
 
 
 #### HTML Testing
