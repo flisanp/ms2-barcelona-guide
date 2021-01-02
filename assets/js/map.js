@@ -8,12 +8,17 @@ function initMap() {
   });
 }
 
+//https://stackoverflow.com/questions/12652287/using-a-local-folder-how-to-store-google-markers
 //icons for map
+
+
 var iconBase =
     "https://flisanp.github.io/ms2-barcelona-guide/assets/images/"; 
+
   var icons = {
     eat: {
-      icon: iconBase + "restaurant.png",
+      icon: iconBase + "restaurant2.png", 
+      
     },
     sleep: {
       icon: iconBase + "B.png",
