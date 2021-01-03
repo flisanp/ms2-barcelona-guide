@@ -263,7 +263,7 @@ var iconBase =
 // Create markers for restaurants
 //https://developers.google.com/maps/documentation/javascript/markers
 
-  var marker, i;
+  var i;
   var markers = [];
 
   $("#eat").click(function() {
@@ -277,14 +277,14 @@ var iconBase =
     
   for (let i = 0; i < eat.length; i++) {
 
-      marker = new google.maps.Marker({
+      const marker = new google.maps.Marker({
       position: eat[i].position,
       animation: google.maps.Animation.DROP,
       icon: icons[eat[i].type].icon,
       map: map,
     });
     
-    var infowindow = new google.maps.InfoWindow({
+    const infowindow = new google.maps.InfoWindow({
     content: eat[i].information,
     });
 
@@ -315,7 +315,7 @@ function clearMarkers() {
     }); 
 
   for (let i = 0; i < sleep.length; i++) {
-      marker = new google.maps.Marker({
+      const marker = new google.maps.Marker({
       position: sleep[i].position,
       animation: google.maps.Animation.DROP,
       icon: icons[sleep[i].type].icon,
@@ -323,7 +323,7 @@ function clearMarkers() {
     });
 
     //create info window
-    var infowindow = new google.maps.InfoWindow({
+    const infowindow = new google.maps.InfoWindow({
     content: sleep[i].information,
   });
     marker.addListener("click", function(){
@@ -352,7 +352,7 @@ $("#discover").click(function() {
     });
 
   for (let i = 0; i < discover.length; i++) {
-     marker = new google.maps.Marker({
+      const marker = new google.maps.Marker({
       position: discover[i].position,
       animation: google.maps.Animation.DROP,
       icon: icons[discover[i].type].icon,
@@ -360,7 +360,7 @@ $("#discover").click(function() {
     });
 
     //create info window
-    var infowindow = new google.maps.InfoWindow({
+    const infowindow = new google.maps.InfoWindow({
     content: discover[i].information,
   });
     marker.addListener("click", function(){
@@ -388,14 +388,14 @@ function clearMarkers() {
     });
 
   for (let i = 0; i < shop.length; i++) {
-      marker = new google.maps.Marker({
+      const marker = new google.maps.Marker({
       position: shop[i].position,
       animation: google.maps.Animation.DROP,
       icon: icons[shop[i].type].icon,
       map: map,
     });
     //create info window
-    var infowindow = new google.maps.InfoWindow({
+    const infowindow = new google.maps.InfoWindow({
     content: shop[i].information,
   });
     marker.addListener("click", function(){
