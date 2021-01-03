@@ -35,42 +35,52 @@ var iconBase =
     {
       position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
       type: "eat",
+      information: "<h4>Hawker 45</h4>",
     },
     {
       position: new google.maps.LatLng(41.38198, 2.18383), //The Green Spot
       type: "eat",
-    },
+      information: "<h4>The Green Spot</h4>",
+     },
     {
       position: new google.maps.LatLng(41.37591, 2.15682), //Tickets
       type: "eat",
+      information: "<h4>Tickets</h4>",
     },
     {
       position: new google.maps.LatLng(41.38952, 2.18171), //Picnic
       type: "eat",
+      information: "<h4>Picnic</h4>",
     },
     {
       position: new google.maps.LatLng(41.37924, 2.17307), //Bar Cañete
       type: "eat",
+      information: "<h4>Bar Cañete</h4>",
     },
     {
       position: new google.maps.LatLng(41.38164, 2.17204), //Direkte Boqueria
       type: "eat",
+      information: "<h4>Direkte Boqueria</h4>",
     },
      {
       position: new google.maps.LatLng(41.384700053046565, 2.181695098818775), //El Xampanyet
       type: "eat",
+      information: "<h4>El Xampanyet</h4>",
     },
      {
       position: new google.maps.LatLng(41.38510245044985, 2.184462906972496), //Koku Kitchen Ramen & Gyoza Bar
       type: "eat",
+      information: "<h4>Koku Kitchen Ramen & Gyoza Bar</h4>",
     },
      {
       position: new google.maps.LatLng(41.39255514750829, 2.1674576214895405), //Tapas 24
       type: "eat",
+      information: "<h4>Tapas 24</h4>",
     },
      {
       position: new google.maps.LatLng(41.37411213083554, 2.1655625478130056), //Quimet & Quimet 
       type: "eat",
+      information: "<h4>Quimet & Quimet</h4>",
     },
 
     ];
@@ -80,42 +90,52 @@ var iconBase =
     {  
       position: new google.maps.LatLng(41.36852779108305, 2.190012429899792), //W Barcelona
       type: "sleep",
+      information: "<h4>W Barcelona</h4>",
     },
     {
-      position: new google.maps.LatLng(41.391968625896496, 2.171801736426036), //Cotton House Hotel, Autograph Collection
+      position: new google.maps.LatLng(41.391968625896496, 2.171801736426036), //Cotton House Hotel
       type: "sleep",
+      information: "<h4>Cotton House Hotel</h4>",
     },
     {
       position: new google.maps.LatLng(41.393826822152455, 2.17433123587537), //Casa Bonay
       type: "sleep",
+      information: "<h4>Casa Bonay</h4>",
     },
     {
       position: new google.maps.LatLng(41.25476786882916, 1.9046829936590812), //Little Beach House Barcelona
       type: "sleep",
+      information: "<h4>Little Beach House Barcelona</h4>",
     },
     {
       position: new google.maps.LatLng(41.38362545982422, 2.170773698636782), //Hotel 1898
       type: "sleep",
+      information: "<h4>Hotel 1898</h4>",
     },
     {
       position: new google.maps.LatLng(41.37183513905292, 2.1664444061486687), //Hotel Brummell
       type: "sleep",
+      information: "<h4>Hotel Brummell</h4>",
     },
     {
       position: new google.maps.LatLng(41.39461890450198, 2.1632495658994504), //Alma Barcelona
       type: "sleep",
+      information: "<h4>Alma Barcelona</h4>",
     },
     {
       position: new google.maps.LatLng(41.392077930481726, 2.1660268775265665), //Margot House
       type: "sleep",
+      information: "<h4>Margot House</h4>",
     },
     {
       position: new google.maps.LatLng(41.382892906328806, 2.1793504801022032), //Mercer Hotel Barcelona
       type: "sleep",
+      information: "<h4>Mercer Hotel Barcelona</h4>",
     },
     {
       position: new google.maps.LatLng(41.380416815832355, 2.18082959451229), //The Serras Hotel Barcelona
       type: "sleep",
+      information: "<h4>The Serras Hotel Barcelona</h4>",
     },
 
     ];
@@ -205,40 +225,12 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.39899206975049, 2.196778805056189), //Ultra-Local Records
       type: "shop",
-      name: "<h3>Ultra-Local Records</h3>",
-      information: "<p>hej hej</p>"
     },
     ];
-
-/*
-
-//Holds the information showed in each infowindow//
-let infoObj= [];
-
-// Iterates through the shops, adding info to each location//
-for (let i = 0; i < shop.length; i++) {
-        let contentString = '<h3>' + shop[i].name + '</h3>'+ shop[i].information;
-
- 
-// Adds infowindow //   
-let infowindow = new google.maps.InfoWindow({
-        content: contentString
-        });
-
-// Tells the page to show the infowindow when location is clicked, and to close any previously opened infowindow //
-    marker.addListener("click", function () {
-        closeOtherInfo();
-
-        infowindow.open(map, marker);
-        infoObj[0] = infowindow;
-        });
-    }
-
-   
-*/
-
-
     
+
+
+
 // Create markers for restaurants
 //https://developers.google.com/maps/documentation/javascript/markers
 
@@ -260,6 +252,15 @@ let infowindow = new google.maps.InfoWindow({
       icon: icons[eat[i].type].icon,
       map: map,
     });
+    //create info window
+    var infowindow = new google.maps.InfoWindow({
+    content: eat[i].information,
+  });
+
+    // your marker creation code here
+  marker.addListener("click", function(){
+  infowindow.open(map, marker);   
+  });  
     markers.push(marker);
 }
   });
@@ -288,6 +289,15 @@ function clearMarkers() {
       icon: icons[sleep[i].type].icon,
       map: map,
     });
+
+    //create info window
+    var infowindow = new google.maps.InfoWindow({
+    content: sleep[i].information,
+  });
+    marker.addListener("click", function(){
+    infowindow.open(map, marker);    
+  });
+
     markers.push(marker);  
 }
   });

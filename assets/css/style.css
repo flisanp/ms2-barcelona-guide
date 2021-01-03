@@ -32,6 +32,15 @@ h3 {
   color: #11466A;
 }
 
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFCE0A;
+}
+
 /*------------ header/navbar ------------*/
 
 .nav-link{
