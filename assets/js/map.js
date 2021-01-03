@@ -145,42 +145,52 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.40432587365964, 2.174218047853699), //Sagrada Familia
       type: "discover",
+      information: "<h4>Sagrada Familia</h4>",
     },
     {
       position: new google.maps.LatLng(41.41447866647113, 2.1526837704703126), //Parc Güell
       type: "discover",
+      information: "<h4>Parc Güell</h4>",
     },
     {
       position: new google.maps.LatLng(41.395376427112694, 2.161880947544949), //Casa Milà
       type: "discover",
+      information: "<h4>Casa Milà</h4>",
     },
     {
       position: new google.maps.LatLng(41.365478612991836, 2.167493493466441), //Montjuic
       type: "discover",
+      information: "<h4>Montjuic</h4>",
     },
     {
       position: new google.maps.LatLng(41.391894463728136, 2.164935430233241), //Casa Batlló
       type: "discover",
+      information: "<h4>Casa Batlló</h4>",
     },
     {
       position: new google.maps.LatLng(41.387650217922044, 2.1232806935160213), //Camp Nou
       type: "discover",
+      information: "<h4>Camp Nou</h4>",
     },
     {
       position: new google.maps.LatLng(41.380424660929904, 2.189755392339966), //La Barceloneta
       type: "discover",
+      information: "<h4>La Barceloneta</h4>",
     },
     {
       position: new google.maps.LatLng(41.381965261382774, 2.171553120810967), //La Boqueria Market
       type: "discover",
+      information: "<h4>La Boqueria Market</h4>",
     },
     {
       position: new google.maps.LatLng(41.38335886348501, 2.166879483602256), //MACBA
       type: "discover",
+      information: "<h4>MACBA</h4>",
     },
     {
       position: new google.maps.LatLng(41.37881557047545, 2.162059735872605), //Mercat de Sant Antoni
       type: "discover",
+      information: "<h4>Mercat de Sant Antoni</h4>",
     },
     ];
 
@@ -189,42 +199,52 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.383871205004745, 2.168845377253543), //La Central
       type: "shop",
+      information: "<h4>La Central</h4>",
     },
     {
       position: new google.maps.LatLng(41.392742332196505, 2.176602149798577), //Sivasdescalzo
       type: "shop",
+      information: "<h4>Sivasdescalzo</h4>",
     },
     {
       position: new google.maps.LatLng(41.38335015596444, 2.1681139075210356), //Nuovum
       type: "shop",
+      information: "<h4>Nuovum</h4>",
     },
     {
       position: new google.maps.LatLng(41.37693102787546, 2.1622144494409516), //Llibreria Calders bookshop
       type: "shop",
+      information: "<h4>Llibreria Calders bookshop</h4>",
     },
     {
       position: new google.maps.LatLng(41.38252950814032, 2.1658988633922753), //Les Topettes
       type: "shop",
+      information: "<h4>Les Topettes</h4>",
     },
     {
       position: new google.maps.LatLng(41.38464200260276, 2.174994406150571), //La Capell
       type: "shop",
+      information: "<h4>La Capell</h4>",
     },
     {
       position: new google.maps.LatLng(41.384489403245425, 2.1799833344975283), //Après Ski
       type: "shop",
+      information: "<h4>Après Ski</h4>",
     },
      {
       position: new google.maps.LatLng(41.38510575043293, 2.183773406972111), //Bobo Choses Barcelona Born
       type: "shop",
+      information: "<h4>Bobo Choses Barcelona Born</h4>",
     },
      {
       position: new google.maps.LatLng(41.37882131918473, 2.1321906611337673), //Flowers by Bornay
       type: "shop",
+      information: "<h4>Flowers by Bornay</h4>",
     },
      {
       position: new google.maps.LatLng(41.39899206975049, 2.196778805056189), //Ultra-Local Records
       type: "shop",
+      information: "<h4>Ultra-Local Records</h4>",
     },
     ];
     
@@ -326,6 +346,14 @@ $("#discover").click(function() {
       icon: icons[discover[i].type].icon,
       map: map,
     });
+
+    //create info window
+    var infowindow = new google.maps.InfoWindow({
+    content: discover[i].information,
+  });
+    marker.addListener("click", function(){
+    infowindow.open(map, marker);    
+  });
     markers.push(marker);
  }
   });
@@ -354,6 +382,13 @@ function clearMarkers() {
       icon: icons[shop[i].type].icon,
       map: map,
     });
+    //create info window
+    var infowindow = new google.maps.InfoWindow({
+    content: shop[i].information,
+  });
+    marker.addListener("click", function(){
+    infowindow.open(map, marker);    
+  });
     markers.push(marker);
  }
   });
