@@ -249,52 +249,92 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.383871205004745, 2.168845377253543), //La Central
       type: "shop",
-      information: "<h4>La Central</h4>",
+      information:"<div class='info-window'><h4>La Central</h4>"+ 
+      '<h5><i class="fa fa-book"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 10h to 21h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer de Mallorca, 237'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.lacentral.com'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.392742332196505, 2.176602149798577), //Sivasdescalzo
       type: "shop",
-      information: "<h4>Sivasdescalzo</h4>",
+      information: "<div class='info-window'><h4>Sivasdescalzo</h4>"+ 
+      '<h5><i class="fa fa-shoe-prints"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 11h to 17h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.sivasdescalzo.com/en/lifestyle'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38335015596444, 2.1681139075210356), //Nuovum
       type: "shop",
-      information: "<h4>Nuovum</h4>",
+      information:"<div class='info-window'><h4>Nuovum</h4>"+ 
+      '<h5><i class="fas fa-gift"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 11h to 14h and 17h to 20h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer dElisabets, 20'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://nuovum.com'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.37693102787546, 2.1622144494409516), //Llibreria Calders bookshop
       type: "shop",
-      information: "<h4>Llibreria Calders bookshop</h4>",
+      information:"<div class='info-window'><h4>Llibreria Calders</h4>"+ 
+      '<h5><i class="fa fa-book"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 10h to 21h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Passatge de Pere Calders, 9'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/lacalders/'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38252950814032, 2.1658988633922753), //Les Topettes
       type: "shop",
-      information: "<h4>Les Topettes</h4>",
+      information:"<div class='info-window'><h4>Les Topettes</h4>"+ 
+      '<h5><i class="fa fa-gift"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 11h to 14h and 16h to 21h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.lestopettes.com'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38464200260276, 2.174994406150571), //La Capell
       type: "shop",
-      information: "<h4>La Capell</h4>",
+      information:"<div class='info-window'><h4>La Capell</h4>"+ 
+      '<h5><i class="fas fa-book-open"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 9.30h to 19h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Plaça Nova, 5'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.lacapell.com'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.384489403245425, 2.1799833344975283), //Après Ski
       type: "shop",
-      information: "<h4>Après Ski</h4>",
+      information:"<div class='info-window'><h4>Après Ski</h4>"+ 
+      '<h5><i class="fa fa-tshirt"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 12h to 19h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> C. dels Vigatans, 11'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://apresski.es'> Visit website</a></h5></div>",
     },
      {
-      position: new google.maps.LatLng(41.38510575043293, 2.183773406972111), //Bobo Choses Barcelona Born
+      position: new google.maps.LatLng(41.38510575043293, 2.183773406972111), //Bobo Choses 
       type: "shop",
-      information: "<h4>Bobo Choses Barcelona Born</h4>",
+      information: "<div class='info-window'><h4>Bobo Choses</h4>"+ 
+      '<h5><i class="fa fa-tshirt"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 11h to 20h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer de la Ribera, 1'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.bobochoses.com/'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.37882131918473, 2.1321906611337673), //Flowers by Bornay
       type: "shop",
-      information: "<h4>Flowers by Bornay</h4>",
+      information: "<div class='info-window'><h4>Flowers by Bornay</h4>"+ 
+      '<h5><i class="fas fa-seedling"></i>'+ "<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 10h to 14h and 15h to 18h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://bornay.ws'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.39899206975049, 2.196778805056189), //Ultra-Local Records
       type: "shop",
-      information: "<h4>Ultra-Local Records</h4>",
+      information: "<div class='info-window'><h4>Ultra-Local Records</h4>"+ 
+      '<h5><i class="fa fa-music"></i>'+"<br />" +
+      '<i class="far fa-clock"></i> Opening hours: 10h to 14h and 15h to 18h'+ "<br />" +
+      '<i class="fa fa-map-marker"></i> Carrer de Pujades, 113'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/Ultra-Local-Records-270410556408977/'target='blank'> Visit website</a></h5></div>",
     },
     ];
     
