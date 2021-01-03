@@ -110,7 +110,7 @@ I wanted the design to be easy navigated and for the user to immdiately understa
 - Trouble with linking buttons to map and showing the correct markers.
     - markers.push(marker) code was in the wrong place, moved it to inside the preceding for loop.
 
-- Info window on markers would not work
+- Info window on markers only shows last location
 
 
 
@@ -186,3 +186,12 @@ https://www.epocaceramic.com
 
 
 
+
+
+const infowindow = new google.maps.InfoWindow({
+    content: eat[i].information,
+  });
+  // your marker creation code here
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
+  });

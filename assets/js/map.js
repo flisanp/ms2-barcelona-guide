@@ -70,17 +70,23 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.38510245044985, 2.184462906972496), //Koku Kitchen Ramen & Gyoza Bar
       type: "eat",
-      information: "<h4>Koku Kitchen Ramen & Gyoza Bar</h4>",
+      information: "<div class='info-window'><h4>Koku Kitchen Ramen & Gyoza Bar</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer del Comerç, 29'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://kokukitchen.es/'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.39255514750829, 2.1674576214895405), //Tapas 24
       type: "eat",
-      information: "<h4>Tapas 24</h4>",
+      information: "<div class='info-window'><h4>Tapas 24</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer de la Diputació, 269'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.37411213083554, 2.1655625478130056), //Quimet & Quimet 
       type: "eat",
-      information: "<h4>Quimet & Quimet</h4>",
+      information: "<div class='info-window'><h4>Quimet & Quimet</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer del Poeta Cabanyes, 25'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'> Visit website</a></h5></div>",
     },
 
     ];
@@ -135,7 +141,10 @@ var iconBase =
     {
       position: new google.maps.LatLng(41.380416815832355, 2.18082959451229), //The Serras Hotel Barcelona
       type: "sleep",
-      information: "<h4>The Serras Hotel Barcelona</h4>",
+      information: "<div class='info-window'><h4>The Serras Hotel Barcelona</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Passeig de Colom, 9'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'> Visit website</a></h5></div>",
     },
 
     ];
@@ -265,25 +274,28 @@ var iconBase =
       lng: 2.154007
     });
 
+    
   for (let i = 0; i < eat.length; i++) {
+
       marker = new google.maps.Marker({
       position: eat[i].position,
-       animation: google.maps.Animation.DROP,
+      animation: google.maps.Animation.DROP,
       icon: icons[eat[i].type].icon,
       map: map,
     });
-    //create info window
+    
     var infowindow = new google.maps.InfoWindow({
     content: eat[i].information,
-  });
+    });
 
-    // your marker creation code here
-  marker.addListener("click", function(){
-  infowindow.open(map, marker);   
-  });  
+    marker.addListener("click", function(){
+    infowindow.open(map, marker);   
+    }); 
+ 
+  
     markers.push(marker);
-}
-  });
+    }
+    });
 
 //Clear away any existing markers 
 function clearMarkers() {
