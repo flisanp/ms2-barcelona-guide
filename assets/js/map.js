@@ -3,14 +3,13 @@ var map;
 /// map 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 41.38879, lng: 2.15899 }, 
+    center: { lat: 41.390205, lng: 2.154007 }, 
     zoom: 12,
   });
 }
 
 //https://stackoverflow.com/questions/12652287/using-a-local-folder-how-to-store-google-markers
 //icons for map: http://map-icons.com
-
 
 var iconBase =
     "https://flisanp.github.io/ms2-barcelona-guide/assets/images/icons-map/"; 
@@ -29,24 +28,21 @@ var iconBase =
       icon: iconBase + "store.svg",
     },
   };
-  
+
 
   //restaurant locations
   var eat = [
     {
       position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
       type: "eat",
-      content:"<img src='assets/images/map-images/ano_150px.jpg'><h4>Ano Mera</h4><a href='index.html#ano-info'>Click here to learn more Ano Mera</a>",
     },
     {
       position: new google.maps.LatLng(41.38198, 2.18383), //The Green Spot
       type: "eat",
-       content:"<img src='assets/images/map-images/ano_150px.jpg'><h4>Ano Mera</h4><a href='index.html#ano-info'>Click here to learn more Ano Mera</a>",
     },
     {
       position: new google.maps.LatLng(41.37591, 2.15682), //Tickets
       type: "eat",
-       content:"<img src='assets/images/map-images/ano_150px.jpg'><h4>Ano Mera</h4><a href='index.html#ano-info'>Click here to learn more Ano Mera</a>",
     },
     {
       position: new google.maps.LatLng(41.38952, 2.18171), //Picnic
@@ -209,8 +205,38 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.39899206975049, 2.196778805056189), //Ultra-Local Records
       type: "shop",
+      name: "<h3>Ultra-Local Records</h3>",
+      information: "<p>hej hej</p>"
     },
     ];
+
+/*
+
+//Holds the information showed in each infowindow//
+let infoObj= [];
+
+// Iterates through the shops, adding info to each location//
+for (let i = 0; i < shop.length; i++) {
+        let contentString = '<h3>' + shop[i].name + '</h3>'+ shop[i].information;
+
+ 
+// Adds infowindow //   
+let infowindow = new google.maps.InfoWindow({
+        content: contentString
+        });
+
+// Tells the page to show the infowindow when location is clicked, and to close any previously opened infowindow //
+    marker.addListener("click", function () {
+        closeOtherInfo();
+
+        infowindow.open(map, marker);
+        infoObj[0] = infowindow;
+        });
+    }
+
+   
+*/
+
 
     
 // Create markers for restaurants
@@ -223,8 +249,8 @@ var iconBase =
     clearMarkers();
     map.setZoom(13);
     map.setCenter({
-      lat: 41.38879,
-      lng: 2.15899
+      lat: 41.390205,
+      lng: 2.154007
     });
 
   for (let i = 0; i < eat.length; i++) {
@@ -249,10 +275,10 @@ function clearMarkers() {
 // Create markers for hotels
   $("#sleep").click(function() {
     clearMarkers();
-    map.setZoom(14);
+    map.setZoom(13);
     map.setCenter({
-      lat: 41.38879,
-      lng: 2.15899
+     lat: 41.390205,
+     lng: 2.154007
     }); 
 
   for (let i = 0; i < sleep.length; i++) {
@@ -279,8 +305,8 @@ $("#discover").click(function() {
     clearMarkers();
     map.setZoom(13);
     map.setCenter({
-      lat: 41.38879,
-      lng: 2.15899
+       lat: 41.390205,
+      lng: 2.154007
     });
 
   for (let i = 0; i < discover.length; i++) {
@@ -307,8 +333,8 @@ function clearMarkers() {
     clearMarkers();
     map.setZoom(13);
     map.setCenter({
-      lat: 41.38879,
-      lng: 2.15899
+       lat: 41.390205,
+      lng: 2.154007
     });
 
   for (let i = 0; i < shop.length; i++) {
@@ -321,5 +347,9 @@ function clearMarkers() {
     markers.push(marker);
  }
   });
+
+  
+
+ 
 
  
