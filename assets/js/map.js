@@ -9,7 +9,7 @@ function initMap() {
 }
 
 //https://stackoverflow.com/questions/12652287/using-a-local-folder-how-to-store-google-markers
-//icons for map
+//icons for map: http://map-icons.com
 
 
 var iconBase =
@@ -26,7 +26,7 @@ var iconBase =
       icon: iconBase + "sights.svg",
     },
      shop: {
-      icon: iconBase + "shopping.svg",
+      icon: iconBase + "store.svg",
     },
   };
   
@@ -58,6 +58,22 @@ var iconBase =
     },
     {
       position: new google.maps.LatLng(41.38164, 2.17204), //Direkte Boqueria
+      type: "eat",
+    },
+     {
+      position: new google.maps.LatLng(41.384700053046565, 2.181695098818775), //El Xampanyet
+      type: "eat",
+    },
+     {
+      position: new google.maps.LatLng(41.38510245044985, 2.184462906972496), //Koku Kitchen Ramen & Gyoza Bar
+      type: "eat",
+    },
+     {
+      position: new google.maps.LatLng(41.39255514750829, 2.1674576214895405), //Tapas 24
+      type: "eat",
+    },
+     {
+      position: new google.maps.LatLng(41.37411213083554, 2.1655625478130056), //Quimet & Quimet 
       type: "eat",
     },
 
@@ -101,10 +117,14 @@ var iconBase =
       position: new google.maps.LatLng(41.382892906328806, 2.1793504801022032), //Mercer Hotel Barcelona
       type: "sleep",
     },
+    {
+      position: new google.maps.LatLng(41.380416815832355, 2.18082959451229), //The Serras Hotel Barcelona
+      type: "sleep",
+    },
 
     ];
 
-    //sight locations
+    //sights locations
     var discover = [
      {
       position: new google.maps.LatLng(41.40432587365964, 2.174218047853699), //Sagrada Familia
@@ -132,6 +152,18 @@ var iconBase =
     },
     {
       position: new google.maps.LatLng(41.380424660929904, 2.189755392339966), //La Barceloneta
+      type: "discover",
+    },
+    {
+      position: new google.maps.LatLng(41.381965261382774, 2.171553120810967), //La Boqueria Market
+      type: "discover",
+    },
+    {
+      position: new google.maps.LatLng(41.38335886348501, 2.166879483602256), //MACBA
+      type: "discover",
+    },
+    {
+      position: new google.maps.LatLng(41.37881557047545, 2.162059735872605), //Mercat de Sant Antoni
       type: "discover",
     },
     ];
@@ -174,6 +206,10 @@ var iconBase =
       position: new google.maps.LatLng(41.37882131918473, 2.1321906611337673), //Flowers by Bornay
       type: "shop",
     },
+     {
+      position: new google.maps.LatLng(41.39899206975049, 2.196778805056189), //Ultra-Local Records
+      type: "shop",
+    },
     ];
 
     
@@ -185,7 +221,7 @@ var iconBase =
 
   $("#eat").click(function() {
     clearMarkers();
-    map.setZoom(14);
+    map.setZoom(13);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
@@ -241,7 +277,7 @@ function clearMarkers() {
 // Create markers for sights
 $("#discover").click(function() {
     clearMarkers();
-    map.setZoom(14);
+    map.setZoom(13);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
@@ -269,7 +305,7 @@ function clearMarkers() {
 // Create markers for shops
   $("#shop").click(function() {
     clearMarkers();
-    map.setZoom(14);
+    map.setZoom(13);
     map.setCenter({
       lat: 41.38879,
       lng: 2.15899
