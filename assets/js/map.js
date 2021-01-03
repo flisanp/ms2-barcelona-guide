@@ -1,3 +1,6 @@
+/*line below tells JSHint that the code uses ECMAScript 6 specific syntax:https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const*/
+/*jshint esversion: 6 */
+
 var map;
 
 /// map 
@@ -36,70 +39,70 @@ var iconBase =
       position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
       type: "eat",
       information: "<div class='info-window'><h4>Hawker 45</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer de Casp, 45'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de Casp, 45'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='http://hawker45.com/en/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38198, 2.18383), //The Green Spot
       type: "eat",
       information: "<div class='info-window'><h4>The Green Spot</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer de la Reina Cristina, 12'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de la Reina Cristina, 12'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.encompaniadelobos.com/en/the-green-spot/' target='blank'> Visit website</a></h5></div>",
      },
     {
       position: new google.maps.LatLng(41.37591, 2.15682), //Tickets
       type: "eat",
       information: "<div class='info-window'><h4>Tickets</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Av. del Paral·lel, 164'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Av. del Paral·lel, 164'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://elbarri.com/en/restaurant/tickets/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38952, 2.18171), //Picnic
       type: "eat",
       information: "<div class='info-window'><h4>Picnic</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer del Comerç, 1'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer del Comerç, 1'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='http://www.picnic-restaurant.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.37924, 2.17307), //Bar Cañete
       type: "eat",
       information: "<div class='info-window'><h4>Bar Cañete</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer de la Unió, 17'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de la Unió, 17'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.barcanete.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38164, 2.17204), //Direkte Boqueria
       type: "eat",
       information: "<div class='info-window'><h4>Direkte Boqueria</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer de les Cabres, 13'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de les Cabres, 13'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='http://www.direkte.cat' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.384700053046565, 2.181695098818775), //El Xampanyet
       type: "eat",
       information: "<div class='info-window'><h4>El Xampanyet</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer de Montcada, 22'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de Montcada, 22'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/El-Xampanyet-1427201254238228/' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.38510245044985, 2.184462906972496), //Koku Kitchen Ramen & Gyoza Bar
       type: "eat",
       information: "<div class='info-window'><h4>Koku Kitchen Ramen & Gyoza Bar</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer del Comerç, 29'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer del Comerç, 29'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://kokukitchen.es/' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.39255514750829, 2.1674576214895405), //Tapas 24
       type: "eat",
       information: "<div class='info-window'><h4>Tapas 24</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer de la Diputació, 269'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de la Diputació, 269'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.37411213083554, 2.1655625478130056), //Quimet & Quimet 
       type: "eat",
       information: "<div class='info-window'><h4>Quimet & Quimet</h4>"+ 
-      '<h5><i class="fa fa-map-marker"></i> Carrer del Poeta Cabanyes, 25'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer del Poeta Cabanyes, 25'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'target='blank'> Visit website</a></h5></div>",
     },
 
@@ -112,7 +115,7 @@ var iconBase =
       type: "sleep",
       information: "<div class='info-window'><h4>W Barcelona</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Plaça Rosa Del Vents 1, Final, Passeig de Joan de Borbó'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Plaça Rosa Del Vents 1, Final, Passeig de Joan de Borbó'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.marriott.com/hotels/travel/bcnwh-w-barcelona/' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -120,7 +123,7 @@ var iconBase =
       type: "sleep",
       information: "<div class='info-window'><h4>Cotton House Hotel</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Gran Via de les Corts Catalanes, 670'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Gran Via de les Corts Catalanes, 670'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.hotelcottonhouse.com' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -128,7 +131,7 @@ var iconBase =
       type: "sleep",
       information:  "<div class='info-window'><h4>Casa Bonay</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Gran Via de les Corts Catalanes, 700'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Gran Via de les Corts Catalanes, 700'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://casabonay.com' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -136,7 +139,7 @@ var iconBase =
       type: "sleep",
       information:  "<div class='info-window'><h4>Little Beach House Barcelona</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Carrer Mirador del Port, 1'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer Mirador del Port, 1'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.sohohouse.com/houses/little-beach-house-barcelona' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -144,7 +147,7 @@ var iconBase =
       type: "sleep",
       information:  "<div class='info-window'><h4>Hotel 1898</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> La Rambla, 109'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> La Rambla, 109'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.hotel1898.com/en/' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -152,7 +155,7 @@ var iconBase =
       type: "sleep",
       information:  "<div class='info-window'><h4>Hotel Brummell</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Carrer Nou de la Rambla, 174'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer Nou de la Rambla, 174'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.hotelbrummell.com' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -160,7 +163,7 @@ var iconBase =
       type: "sleep",
       information:  "<div class='info-window'><h4>Alma Barcelona</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Carrer de Mallorca, 271'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer de Mallorca, 271'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://almahotels.com/barcelona/' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -168,7 +171,7 @@ var iconBase =
       type: "sleep",
       information:  "<div class='info-window'><h4>Margot House</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Passeig de Gràcia, 46'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Passeig de Gràcia, 46'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://margothouse.es' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -176,7 +179,7 @@ var iconBase =
       type: "sleep",
       information: "<div class='info-window'><h4>Mercer Hotel Barcelona</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Carrer dels Lledó, 7'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Carrer dels Lledó, 7'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.mercerbarcelona.com/es' target='blank'> Visit website</a></h5></div>",
     },
     {
@@ -184,7 +187,7 @@ var iconBase =
       type: "sleep",
       information: "<div class='info-window'><h4>The Serras Hotel Barcelona</h4>"+ 
       '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
-      '<h5><i class="fa fa-map-marker"></i> Passeig de Colom, 9'+ "<br />" +
+      '<h5><i class="fa fa-map-marker-alt"></i> Passeig de Colom, 9'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://hoteltheserrasbarcelona.com' target='blank'> Visit website</a></h5></div>",
     },
 
@@ -195,7 +198,10 @@ var iconBase =
      {
       position: new google.maps.LatLng(41.40432587365964, 2.174218047853699), //Sagrada Familia
       type: "discover",
-      information: "<h4>Sagrada Familia</h4>",
+      information: "<div class='info-window'><h4>Sagrada Familia</h4>"+ 
+      '<h5><i class="far fa-clock"></i> Opening hours: 9h to 15h'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer Mallorca, 401'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://sagradafamilia.org/en/home'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.41447866647113, 2.1526837704703126), //Parc Güell
@@ -240,7 +246,10 @@ var iconBase =
     {
       position: new google.maps.LatLng(41.37881557047545, 2.162059735872605), //Mercat de Sant Antoni
       type: "discover",
-      information: "<h4>Mercat de Sant Antoni</h4>",
+      information: "<div class='info-window'><h4>Mercat de Sant Antoni</h4>"+ 
+      '<h5><i class="far fa-clock"></i> Opening hours: 10h to 14h and 15h to 18h'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://bornay.ws'> Visit website</a></h5></div>",
     },
     ];
 
@@ -252,7 +261,7 @@ var iconBase =
       information:"<div class='info-window'><h4>La Central</h4>"+ 
       '<h5><i class="fa fa-book"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 10h to 21h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer de Mallorca, 237'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de Mallorca, 237'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.lacentral.com'> Visit website</a></h5></div>",
     },
     {
@@ -261,7 +270,7 @@ var iconBase =
       information: "<div class='info-window'><h4>Sivasdescalzo</h4>"+ 
       '<h5><i class="fa fa-shoe-prints"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 11h to 17h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.sivasdescalzo.com/en/lifestyle'> Visit website</a></h5></div>",
     },
     {
@@ -270,7 +279,7 @@ var iconBase =
       information:"<div class='info-window'><h4>Nuovum</h4>"+ 
       '<h5><i class="fas fa-gift"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 11h to 14h and 17h to 20h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer dElisabets, 20'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer dElisabets, 20'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://nuovum.com'> Visit website</a></h5></div>",
     },
     {
@@ -279,7 +288,7 @@ var iconBase =
       information:"<div class='info-window'><h4>Llibreria Calders</h4>"+ 
       '<h5><i class="fa fa-book"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 10h to 21h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Passatge de Pere Calders, 9'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Passatge de Pere Calders, 9'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/lacalders/'> Visit website</a></h5></div>",
     },
     {
@@ -288,7 +297,7 @@ var iconBase =
       information:"<div class='info-window'><h4>Les Topettes</h4>"+ 
       '<h5><i class="fa fa-gift"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 11h to 14h and 16h to 21h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.lestopettes.com'> Visit website</a></h5></div>",
     },
     {
@@ -297,7 +306,7 @@ var iconBase =
       information:"<div class='info-window'><h4>La Capell</h4>"+ 
       '<h5><i class="fas fa-book-open"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 9.30h to 19h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Plaça Nova, 5'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Plaça Nova, 5'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.lacapell.com'> Visit website</a></h5></div>",
     },
     {
@@ -306,7 +315,7 @@ var iconBase =
       information:"<div class='info-window'><h4>Après Ski</h4>"+ 
       '<h5><i class="fa fa-tshirt"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 12h to 19h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> C. dels Vigatans, 11'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> C. dels Vigatans, 11'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://apresski.es'> Visit website</a></h5></div>",
     },
      {
@@ -315,7 +324,7 @@ var iconBase =
       information: "<div class='info-window'><h4>Bobo Choses</h4>"+ 
       '<h5><i class="fa fa-tshirt"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 11h to 20h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer de la Ribera, 1'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de la Ribera, 1'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.bobochoses.com/'> Visit website</a></h5></div>",
     },
      {
@@ -324,7 +333,7 @@ var iconBase =
       information: "<div class='info-window'><h4>Flowers by Bornay</h4>"+ 
       '<h5><i class="fas fa-seedling"></i>'+ "<br />" +
       '<i class="far fa-clock"></i> Opening hours: 10h to 14h and 15h to 18h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de Melcior de Palau, 36'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://bornay.ws'> Visit website</a></h5></div>",
     },
      {
@@ -333,7 +342,7 @@ var iconBase =
       information: "<div class='info-window'><h4>Ultra-Local Records</h4>"+ 
       '<h5><i class="fa fa-music"></i>'+"<br />" +
       '<i class="far fa-clock"></i> Opening hours: 10h to 14h and 15h to 18h'+ "<br />" +
-      '<i class="fa fa-map-marker"></i> Carrer de Pujades, 113'+ "<br />" +
+      '<i class="fa fa-map-marker-alt"></i> Carrer de Pujades, 113'+ "<br />" +
       "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/Ultra-Local-Records-270410556408977/'target='blank'> Visit website</a></h5></div>",
     },
     ];

@@ -1,3 +1,5 @@
+/*line below tells JSHint that the code uses ECMAScript 6 specific syntax:https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const*/
+/*jshint esversion: 6 */
 
 //scroll back to top button
 /* code taken from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
