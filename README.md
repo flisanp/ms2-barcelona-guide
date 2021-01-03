@@ -36,11 +36,11 @@ I wanted the design to be easy navigated and for the user to immdiately understa
 
 
 #### Wireframes
-- [Home](https://github.com/flisanp/ms1-ceramic-studio/blob/1c78496558ba3f71e3a4b053decec4315fc89053/readme%20assets/wireframes/home.png) 
-- [Gallery](https://github.com/flisanp/ms1-ceramic-studio/blob/1c78496558ba3f71e3a4b053decec4315fc89053/readme%20assets/wireframes/gallery.png) 
-- [About](https://github.com/flisanp/ms1-ceramic-studio/blob/1c78496558ba3f71e3a4b053decec4315fc89053/readme%20assets/wireframes/about.png) 
-- [Stockists](https://github.com/flisanp/ms1-ceramic-studio/blob/1c78496558ba3f71e3a4b053decec4315fc89053/readme%20assets/wireframes/stockists.png) 
-- [Contact](https://github.com/flisanp/ms1-ceramic-studio/blob/1c78496558ba3f71e3a4b053decec4315fc89053/readme%20assets/wireframes/contact.png) 
+- [Home]
+- [Gallery]
+- [About] 
+- [Stockists]
+- [Contact]
 
 # Features
 
@@ -48,41 +48,30 @@ I wanted the design to be easy navigated and for the user to immdiately understa
 
 **Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on.
 
-**Home** - The home page features a hero image with the text "Jane Smith Ceramic Studio, Handcrafted Homeware" and a call to action button that guides the user to her shop. The image shows some of the ceramic items that she makes and this, in combination with the text, provides the user information on what the website is about.
-I wanted the ceramist to somehow be able to sell her work through the website but since we haven't learned the technologies to implement that yet I decided that I'll show her work in an image gallery and let people place orders through the contact form. This didn't feel right with what I wanted to achieve and after having discussed the issue with my mentor we talked about adding a link to an online materketplace outside the page, like Etsy. I think this solution made the website gain clearer purpose.
-
-**Gallery** - The gallery page features a masonry gallery with images of all her work. When you click the images they opens in a fancybox.
-
-**About** - The about page features a photo of the ceramist to present the person who’s making the items. The page also provides a short text that gives some information about who she is and her thoughts about her work. You can also read that she’s available for collaborations.
-
-**Stockists** - The stockist page features an unordered list with links to all her stockists so that users easily can access their websites and get information on where to purchase her items.
+**Home** - The home page features a hero image with the text "Barcelona, city guide" and four call to action buttons that guides the user to the different categories on the map. The image shows a picture over Parc Güell that is one of the main attractions to visit when you’re in Barcelona. 
 
 **Contact** - The contact page features a form where the user can enter their name, email address and a message. The page also features another photo of the ceramist.
 
-**Footer** - A fixed footer that exists on every page. Located in the center of the footer are four social media icons with links to the ceramist social media pages. The links have the same hover effects as the navbar and changes color when hovering over them.
+**Footer** - A fixed footer that exists on every page. Located in the center of the footer are four social media icons. The links have the same hover effects as the navbar and changes color when hovering over them.
 
 #### Features Left To Implement
-- A webshop so that customers easily can buy her work without beeing redirected to Etsy.com.
 
-- The forms functionality.
 
 # Technologies Used
-
 
 - HTML5 and CSS3
 - [GitPod](https://www.gitpod.io) - The developer used GitPod for their IDE while building the website.
 - [GitHub](https://github.com) - This project uses GitHub to store the projects code after being pushed from Git.
 - [Bootstrap](https://getbootstrap.com) - This project uses Bootstrap to make the site responsive and to implement features such as the navbar and the buttons.
 - [FontAwesome](https://fontawesome.com) - This project uses FontAwesome for social media icons.
-- [Google Fonts](https://fonts.google.com) - This project uses Work Sans from Google Fonts.
+- [Google Fonts](https://fonts.google.com) - This project uses Montserrat and Lora from Google Fonts.
 - [Balsamiq](https://balsamiq.com) - The developer used Balsamiq to create wireframes.
 - [DevTools](https://developers.google.com/web/tools/chrome-devtools) - The developer has used DevTools to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
 - [Tinypng](https://tinypng.com) - The developer used Tinypng for compressing images.
 - [Freeformatter](https://www.freeformatter.com/) - The developer used Freeformatter for beautifying HTML and CSS code.
-- [Fancybox](https://fancyapps.com/fancybox/3/) - This project uses Fancybox for image gallery.
 - [A11y](https://color.a11y.com) - The developer used A11y for checking the websites color contrast accessibility 
 - [Am I Responsive?](http://ami.responsivedesign.is/) - The developer used Am I Responsive? for creating the mockup image in the beginning of this README file.
-- [InDesign](https://www.adobe.com/se/products/indesign.html) The developer used InDesign for creating the logo image.
+- [InDesign](https://www.adobe.com/se/products/indesign.html) The developer used InDesign for creating the favicon.
 
 # Testing
 
