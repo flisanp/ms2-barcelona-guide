@@ -35,58 +35,72 @@ var iconBase =
     {
       position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
       type: "eat",
-      information: "<h4>Hawker 45</h4>",
+      information: "<div class='info-window'><h4>Hawker 45</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer de Casp, 45'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='http://hawker45.com/en/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38198, 2.18383), //The Green Spot
       type: "eat",
-      information: "<h4>The Green Spot</h4>",
+      information: "<div class='info-window'><h4>The Green Spot</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer de la Reina Cristina, 12'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.encompaniadelobos.com/en/the-green-spot/' target='blank'> Visit website</a></h5></div>",
      },
     {
       position: new google.maps.LatLng(41.37591, 2.15682), //Tickets
       type: "eat",
-      information: "<h4>Tickets</h4>",
+      information: "<div class='info-window'><h4>Tickets</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Av. del Paral·lel, 164'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://elbarri.com/en/restaurant/tickets/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38952, 2.18171), //Picnic
       type: "eat",
-      information: "<h4>Picnic</h4>",
+      information: "<div class='info-window'><h4>Picnic</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer del Comerç, 1'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='http://www.picnic-restaurant.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.37924, 2.17307), //Bar Cañete
       type: "eat",
-      information: "<h4>Bar Cañete</h4>",
+      information: "<div class='info-window'><h4>Bar Cañete</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer de la Unió, 17'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.barcanete.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38164, 2.17204), //Direkte Boqueria
       type: "eat",
-      information: "<h4>Direkte Boqueria</h4>",
+      information: "<div class='info-window'><h4>Direkte Boqueria</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer de les Cabres, 13'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='http://www.direkte.cat' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.384700053046565, 2.181695098818775), //El Xampanyet
       type: "eat",
-      information: "<h4>El Xampanyet</h4>",
+      information: "<div class='info-window'><h4>El Xampanyet</h4>"+ 
+      '<h5><i class="fa fa-map-marker"></i> Carrer de Montcada, 22'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/El-Xampanyet-1427201254238228/' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.38510245044985, 2.184462906972496), //Koku Kitchen Ramen & Gyoza Bar
       type: "eat",
       information: "<div class='info-window'><h4>Koku Kitchen Ramen & Gyoza Bar</h4>"+ 
       '<h5><i class="fa fa-map-marker"></i> Carrer del Comerç, 29'+ "<br />" +
-      "<i class='fa fa-angle-double-right'></i><a href='https://kokukitchen.es/'> Visit website</a></h5></div>",
+      "<i class='fa fa-angle-double-right'></i><a href='https://kokukitchen.es/' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.39255514750829, 2.1674576214895405), //Tapas 24
       type: "eat",
       information: "<div class='info-window'><h4>Tapas 24</h4>"+ 
       '<h5><i class="fa fa-map-marker"></i> Carrer de la Diputació, 269'+ "<br />" +
-      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'> Visit website</a></h5></div>",
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/' target='blank'> Visit website</a></h5></div>",
     },
      {
       position: new google.maps.LatLng(41.37411213083554, 2.1655625478130056), //Quimet & Quimet 
       type: "eat",
       information: "<div class='info-window'><h4>Quimet & Quimet</h4>"+ 
       '<h5><i class="fa fa-map-marker"></i> Carrer del Poeta Cabanyes, 25'+ "<br />" +
-      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'> Visit website</a></h5></div>",
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'target='blank'> Visit website</a></h5></div>",
     },
 
     ];
@@ -96,55 +110,82 @@ var iconBase =
     {  
       position: new google.maps.LatLng(41.36852779108305, 2.190012429899792), //W Barcelona
       type: "sleep",
-      information: "<h4>W Barcelona</h4>",
+      information: "<div class='info-window'><h4>W Barcelona</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Plaça Rosa Del Vents 1, Final, Passeig de Joan de Borbó'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.marriott.com/hotels/travel/bcnwh-w-barcelona/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.391968625896496, 2.171801736426036), //Cotton House Hotel
       type: "sleep",
-      information: "<h4>Cotton House Hotel</h4>",
+      information: "<div class='info-window'><h4>Cotton House Hotel</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Gran Via de les Corts Catalanes, 670'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.hotelcottonhouse.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.393826822152455, 2.17433123587537), //Casa Bonay
       type: "sleep",
-      information: "<h4>Casa Bonay</h4>",
+      information:  "<div class='info-window'><h4>Casa Bonay</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Gran Via de les Corts Catalanes, 700'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://casabonay.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.25476786882916, 1.9046829936590812), //Little Beach House Barcelona
       type: "sleep",
-      information: "<h4>Little Beach House Barcelona</h4>",
+      information:  "<div class='info-window'><h4>Little Beach House Barcelona</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Carrer Mirador del Port, 1'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.sohohouse.com/houses/little-beach-house-barcelona' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.38362545982422, 2.170773698636782), //Hotel 1898
       type: "sleep",
-      information: "<h4>Hotel 1898</h4>",
+      information:  "<div class='info-window'><h4>Hotel 1898</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> La Rambla, 109'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.hotel1898.com/en/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.37183513905292, 2.1664444061486687), //Hotel Brummell
       type: "sleep",
-      information: "<h4>Hotel Brummell</h4>",
+      information:  "<div class='info-window'><h4>Hotel Brummell</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Carrer Nou de la Rambla, 174'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.hotelbrummell.com' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.39461890450198, 2.1632495658994504), //Alma Barcelona
       type: "sleep",
-      information: "<h4>Alma Barcelona</h4>",
+      information:  "<div class='info-window'><h4>Alma Barcelona</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Carrer de Mallorca, 271'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://almahotels.com/barcelona/' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.392077930481726, 2.1660268775265665), //Margot House
       type: "sleep",
-      information: "<h4>Margot House</h4>",
+      information:  "<div class='info-window'><h4>Margot House</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Passeig de Gràcia, 46'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://margothouse.es' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.382892906328806, 2.1793504801022032), //Mercer Hotel Barcelona
       type: "sleep",
-      information: "<h4>Mercer Hotel Barcelona</h4>",
+      information: "<div class='info-window'><h4>Mercer Hotel Barcelona</h4>"+ 
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<h5><i class="fa fa-map-marker"></i> Carrer dels Lledó, 7'+ "<br />" +
+      "<i class='fa fa-angle-double-right'></i><a href='https://www.mercerbarcelona.com/es' target='blank'> Visit website</a></h5></div>",
     },
     {
       position: new google.maps.LatLng(41.380416815832355, 2.18082959451229), //The Serras Hotel Barcelona
       type: "sleep",
       information: "<div class='info-window'><h4>The Serras Hotel Barcelona</h4>"+ 
-      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
+      '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>'+ "<br />" +
       '<h5><i class="fa fa-map-marker"></i> Passeig de Colom, 9'+ "<br />" +
-      "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'> Visit website</a></h5></div>",
+      "<i class='fa fa-angle-double-right'></i><a href='https://hoteltheserrasbarcelona.com' target='blank'> Visit website</a></h5></div>",
     },
 
     ];
