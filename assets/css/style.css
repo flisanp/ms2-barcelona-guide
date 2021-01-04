@@ -27,9 +27,9 @@ h2 {
 h3 {
   font-family: "Lora", sans-serif;
   font-size: 18px;
-  font-weight: 200;
-  font-style: italic;
-  letter-spacing: 2px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: #11466A;
 }
 
@@ -84,7 +84,7 @@ h5 {
   height: 100vh;
   background: url("../images/barcelona-hero-image.jpg") no-repeat bottom right fixed;
   background-size: cover;
-  padding-bottom: 30%;
+  padding-bottom: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@ h5 {
 
 .hero-text {
    text-align: center; 
-   padding-top: 20%;
+   padding-top: 70%;
 }
 
 .hero-sub {
@@ -105,15 +105,17 @@ h5 {
 }
 
 .hero-info-text {
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 
 .hero-do-text {
-    padding-top: 3rem;
     text-align: center;
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 600;
+    color: #fff;
 }
 
 /*------------ hero to-do section ------------*/
@@ -317,20 +319,4 @@ h2 {
    padding-top: 30%;
 
 }
-}
-
-.animated {
-  animation-duration: 2.5s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.1);}
-  100% {transform: scale(1);}
-}
-.pulse {
-  animation-name: pulse;
-  animation-duration: 1s;
 }
