@@ -38,7 +38,7 @@ var icons = {
 
 //restaurant locations
 var eat = [{
-        position: new google.maps.LatLng(41.39229, 2.17421), //Hawker 45
+        position: new google.maps.LatLng(41.39231753017381, 2.1741624486141027), //Hawker 45
         type: "eat",
         information: "<div class='info-window'><h4>Hawker 45</h4>" +
             '<h5><i class="fa fa-map-marker-alt "></i> Carrer de Casp, 45' + "<br />" +
@@ -201,55 +201,86 @@ var discover = [{
         information: "<div class='info-window'><h4>Sagrada Familia</h4>" +
             '<h5><i class="far fa-clock"></i> Opening hours: 9h to 15h' + "<br />" +
             '<i class="fa fa-map-marker-alt"></i> Carrer Mallorca, 401' + "<br />" +
-            "<i class='fa fa-angle-double-right'></i><a href='https://sagradafamilia.org/en/home'> Visit website</a></h5></div>",
+            "<i class='fa fa-angle-double-right'></i><a href='https://sagradafamilia.org/en/home' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://sagradafamilia.org/en/tickets' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.41447866647113, 2.1526837704703126), //Parc Güell
         type: "discover",
-        information: "<h4>Parc Güell</h4>",
+        information: "<div class='info-window'><h4>Parc Güell</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 9.30h to 17.30h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> Carretera del Carmel, 40' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://parkguell.barcelona/en' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://parkguell.barcelona/en/buy-tickets' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.395376427112694, 2.161880947544949), //Casa Milà
         type: "discover",
-        information: "<h4>Casa Milà</h4>",
+        information:"<div class='info-window'><h4>Casa Milà</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 9h to 20h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> Passeig de Gràcia, 92' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://www.lapedrera.com/en' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://www.lapedrera.com/en/visits' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.365478612991836, 2.167493493466441), //Montjuic
         type: "discover",
-        information: "<h4>Montjuic</h4>",
+        information:"<div class='info-window'><h4>Montjuic</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 11h to 16h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> Avinguda Miramar, 30' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://barcelonando.com/montjuic-olympic-ring/' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://www.getyourguide.se/discovery/-l45/-tc91/?utm_force=0' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.391894463728136, 2.164935430233241), //Casa Batlló
         type: "discover",
-        information: "<h4>Casa Batlló</h4>",
+        information:"<div class='info-window'><h4>Casa Batlló</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 9h to 15h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> Passeig de Gràcia, 43' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://www.casabatllo.es' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://www.casabatllo.es/en/online-tickets/' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
+    
         position: new google.maps.LatLng(41.387650217922044, 2.1232806935160213), //Camp Nou
         type: "discover",
-        information: "<h4>Camp Nou</h4>",
+        information:"<div class='info-window'><h4>Camp Nou</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 9h to 15h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> C. dArístides Maillol, 12' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://www.fcbarcelona.com/en/club/facilities/camp-nou' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://www.fcbarcelona.com/en/tickets/football' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.380424660929904, 2.189755392339966), //La Barceloneta
         type: "discover",
-        information: "<h4>La Barceloneta</h4>",
+        information: "<div class='info-window'><h4>La Barceloneta</h4>" +
+            '<h5><i class="fa fa-umbrella-beach"></i>'+ "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://www.barcelonaturisme.com/wv3/en/page/378/la-barceloneta.html' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.381965261382774, 2.171553120810967), //La Boqueria Market
         type: "discover",
-        information: "<h4>La Boqueria Market</h4>",
+        information: "<div class='info-window'><h4>La Boqueria Market</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 8h to 20.30h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i>  La Rambla, 91' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='http://www.boqueria.barcelona'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.38335886348501, 2.166879483602256), //MACBA
         type: "discover",
-        information: "<h4>MACBA</h4>",
+        information:"<div class='info-window'><h4>MACBA</h4>" +
+            '<h5><i class="far fa-clock"></i> Opening hours: 11h to 18h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> Plaça dels Àngels, 1' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://www.macba.cat/en' target='blank'> Visit website</a>" + "<br />" +
+            "<i class='fa fa-ticket-alt'></i></i><a href='https://www.macba.cat/en/visit' target='blank'> Buy Tickets</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.37881557047545, 2.162059735872605), //Mercat de Sant Antoni
         type: "discover",
         information: "<div class='info-window'><h4>Mercat de Sant Antoni</h4>" +
-            '<h5><i class="far fa-clock"></i> Opening hours: 10h to 14h and 15h to 18h' + "<br />" +
-            '<i class="fa fa-map-marker-alt"></i> Carrer de Melcior de Palau, 36' + "<br />" +
-            "<i class='fa fa-angle-double-right'></i><a href='https://bornay.ws'> Visit website</a></h5></div>",
+            '<h5><i class="far fa-clock"></i> Opening hours: 08h to 20h' + "<br />" +
+            '<i class="fa fa-map-marker-alt"></i> Comte dUrgell, 1' + "<br />" +
+            "<i class='fa fa-angle-double-right'></i><a href='https://www.mercatdesantantoni.com/es/index.html'> Visit website</a></h5></div>",
     },
 ];
 
