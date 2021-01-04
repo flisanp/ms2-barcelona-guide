@@ -41,70 +41,80 @@ var eat = [{
         position: new google.maps.LatLng(41.39231753017381, 2.1741624486141027), //Hawker 45
         type: "eat",
         information: "<div class='info-window'><h4>Hawker 45</h4>" +
-            '<h5><i class="fa fa-map-marker-alt "></i> Carrer de Casp, 45' + "<br />" +
+            '<h5>Asian & Latin American'+"<br />"+
+            '<i class="fa fa-map-marker-alt "></i> Carrer de Casp, 45' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='http://hawker45.com/en/' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.38198, 2.18383), //The Green Spot
         type: "eat",
         information: "<div class='info-window'><h4>The Green Spot</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer de la Reina Cristina, 12' + "<br />" +
+            '<h5>Veggie'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Carrer de la Reina Cristina, 12' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://www.encompaniadelobos.com/en/the-green-spot/' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.37591, 2.15682), //Tickets
         type: "eat",
         information: "<div class='info-window'><h4>Tickets</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Av. del Paral·lel, 164' + "<br />" +
+            '<h5>Tapas and World Cuisine'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Av. del Paral·lel, 164' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://elbarri.com/en/restaurant/tickets/' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.38952, 2.18171), //Picnic
         type: "eat",
         information: "<div class='info-window'><h4>Picnic</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer del Comerç, 1' + "<br />" +
+            '<h5>American-Chilean fusion'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Carrer del Comerç, 1' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='http://www.picnic-restaurant.com' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.37924, 2.17307), //Bar Cañete
         type: "eat",
         information: "<div class='info-window'><h4>Bar Cañete</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer de la Unió, 17' + "<br />" +
+            '<h5>Tapas'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Carrer de la Unió, 17' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://www.barcanete.com' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.38164, 2.17204), //Direkte Boqueria
         type: "eat",
         information: "<div class='info-window'><h4>Direkte Boqueria</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer de les Cabres, 13' + "<br />" +
+            '<h5>Tapas and World Cuisine'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Carrer de les Cabres, 13' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='http://www.direkte.cat' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.384700053046565, 2.181695098818775), //El Xampanyet
         type: "eat",
         information: "<div class='info-window'><h4>El Xampanyet</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer de Montcada, 22' + "<br />" +
+            '<h5>Tapas'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Carrer de Montcada, 22' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://www.facebook.com/El-Xampanyet-1427201254238228/' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.38510245044985, 2.184462906972496), //Koku Kitchen Ramen & Gyoza Bar
         type: "eat",
         information: "<div class='info-window'><h4>Koku Kitchen Ramen & Gyoza Bar</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer del Comerç, 29' + "<br />" +
+            '<h5>Asian'+"<br />"+
+            '<i class="fa fa-map-marker-alt"></i> Carrer del Comerç, 29' + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://kokukitchen.es/' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.39255514750829, 2.1674576214895405), //Tapas 24
         type: "eat",
         information: "<div class='info-window'><h4>Tapas 24</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer de la Diputació, 269' + "<br />" +
+            '<h5>Tapas'+"<br />"+
+            "<i class='fa fa-map-marker-alt'></i> Carrer de la Diputació, 269" + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/' target='blank'> Visit website</a></h5></div>",
     },
     {
         position: new google.maps.LatLng(41.37411213083554, 2.1655625478130056), //Quimet & Quimet 
         type: "eat",
         information: "<div class='info-window'><h4>Quimet & Quimet</h4>" +
-            '<h5><i class="fa fa-map-marker-alt"></i> Carrer del Poeta Cabanyes, 25' + "<br />" +
+            '<h5>Tapas'+"<br />"+
+            "<i class='fa fa-map-marker-alt'></i> Carrer del Poeta Cabanyes, 25" + "<br />" +
             "<i class='fa fa-angle-double-right'></i><a href='https://www.carlesabellan.com/tapas24-diputacio/'target='blank'> Visit website</a></h5></div>",
     },
 
