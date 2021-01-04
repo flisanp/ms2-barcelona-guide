@@ -104,15 +104,15 @@ h5 {
 }
 
 .hero-info-text {
-    padding-top: 1rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
 .hero-do-text {
-    padding-top: 4rem;
+    padding-top: 3rem;
     text-align: center;
     font-size: 26px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*------------ hero to-do section ------------*/
@@ -225,9 +225,8 @@ div#map {
 }
 
 .contact-send {
-    font-family: "Montserrat", sans-serif;
-   
-     font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
   font-size: 16px;
   color: #fff;
   background: #11466A;
