@@ -1,125 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-      <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="shortcut icon" type="image/png" href="assets/images/B.png">
-      <title>Barcelona City Guide</title>
-   </head>
-   <body onload="initMap()">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/images/B.png">
+    <title>Barcelona City Guide</title>
+</head>
+<body onload="initMap()">
     <!--code for scroll to top button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
-      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
     <!-- header -->
-      <header>
-         <!-- used responsive navbar from bootstrap -->
-         <!-- logo and nav bar -->
-         <nav class="navbar navbar-light navbar-expand-lg fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
-               aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <header>
+        <!-- used responsive navbar from bootstrap -->
+        <!-- logo and nav bar -->
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <!-- nav bar links -->
             <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="weather.html">Weather</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-               </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather.html">Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-         </nav>
-      </header>
-      <!-- full width hero image -->
-      <div class="container-fluid hero-container">
-         <div class="row" >
+        </nav>
+    </header>
+    <!-- full width hero image -->
+    <div class="container-fluid hero-container">
+        <div class="row">
             <div class="col-12">
-               <section class="jumbotron">
-                  <h1 class="hero-text">Barcelona</h1>
-                  <h2 class="hero-sub">- city guide -</h2>
-                  <h3 class="hero-info-text">Your guide to get the most out of your visit to the great catalan city of Barcelona.</h3>
-                  <!-- to-do section -->   
-                  <div class="container-fluid">
-                     <div class="row">     
-                        <div class="col-6 col-lg">
-                           <section class="jumbotron to-do">     
-                              <a class="btn btn-outline-secondary button-text btn-pos hero-sub" 
-                                 href="#map" id="eat">EAT</a>  
-                           </section>
+                <section class="jumbotron">
+                    <h1 class="hero-text">Barcelona</h1>
+                    <h2 class="hero-sub">- city guide -</h2>
+                    <h3 class="hero-info-text">Your guide to get the most out of your visit to the great catalan city of
+                        Barcelona.</h3>
+                    <h4 class="hero-do-text animated pulse"> What do you want to do:</h4>
+                    <!-- to-do section -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6 col-lg">
+                                <section class="jumbotron to-do">
+                                    <a class="btn btn-outline-secondary button-text btn-pos hero-sub" href="#map"
+                                        id="eat">EAT</a>
+                                </section>
+                            </div>
+                            <div class="col-6 col-lg">
+                                <section class="jumbotron to-do">
+                                    <a class="btn btn-outline-secondary button-text btn-pos hero-sub" href="#map"
+                                        id="sleep">SLEEP</a>
+                                </section>
+                            </div>
+                            <div class="col-6 col-lg">
+                                <section class="jumbotron to-do">
+                                    <a class="btn btn-outline-secondary button-text btn-pos hero-sub" href="#map"
+                                        id="discover">DISCOVER</a>
+                                </section>
+                            </div>
+                            <div class="col-6 col-lg">
+                                <section class="jumbotron to-do">
+                                    <a class="btn btn-outline-secondary button-text btn-pos hero-sub" href="#map"
+                                        id="shop">SHOP</a>
+                                </section>
+                            </div>
                         </div>
-                        <div class="col-6 col-lg">
-                           <section class="jumbotron to-do">
-                              <a class="btn btn-outline-secondary button-text btn-pos hero-sub" 
-                                 href="#map" id="sleep">SLEEP</a>
-                           </section>
-                        </div>
-                        <div class="col-6 col-lg">
-                           <section class="jumbotron to-do">
-                              <a class="btn btn-outline-secondary button-text btn-pos hero-sub" 
-                                 href="#map" id="discover">DISCOVER</a>
-                           </section>
-                        </div>
-                        <div class="col-6 col-lg">
-                           <section class="jumbotron to-do">
-                              <a class="btn btn-outline-secondary button-text btn-pos hero-sub" 
-                                 href="#map" id="shop">SHOP</a>
-                           </section>
-                        </div>
-                     </div>
-                  </div>
-               </section>
+                    </div>
+                </section>
             </div>
-         </div>
-      </div>
-      <!-- Google map --> 
-      <div id="map"></div>
-      <!-- footer -->
-      <footer class="footer text-center">
-         <!-- social icons/links -->
-         <ul class="list-inline social-links">
+        </div>
+    </div>
+    <!-- Google map -->
+    <div id="map"></div>
+    <!-- footer -->
+    <footer class="footer text-center">
+        <!-- social icons/links -->
+        <ul class="list-inline social-links">
             <li class="list-inline-item">
-               <a target="_blank" href="https://www.facebook.com">
-               <i class="fa fa-facebook" aria-hidden="true"></i>
-               <span class="sr-only">Facebook</span>
-               </a>
+                <a target="_blank" href="https://www.facebook.com">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
             </li>
             <li class="list-inline-item">
-               <a target="_blank" href="https://www.instagram.com">
-               <i class="fa fa-instagram" aria-hidden="true"></i>
-               <span class="sr-only">Instagram</span>
-               </a>
+                <a target="_blank" href="https://www.instagram.com">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
             </li>
             <li class="list-inline-item">
-               <a target="_blank" href="https://www.twitter.com">
-               <i class="fa fa-twitter" aria-hidden="true"></i>
-               <span class="sr-only">Twitter</span>
-               </a>
+                <a target="_blank" href="https://www.twitter.com">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
             </li>
             <li class="list-inline-item">
-               <a target="_blank" href="https://www.pinterest.com">
-               <i class="fa fa-pinterest" aria-hidden="true"></i> 
-               <span class="sr-only">Pinterest</span>
-               </a>
+                <a target="_blank" href="https://www.pinterest.com">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                </a>
             </li>
-         </ul>
-      </footer>
-      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI51QScmQL28gta6zQtTwL-teUDyBp7FU&libraries=places&v=weekly&v=beta&map_ids=23105"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script src="assets/js/map.js"></script>
-      <script src="assets/js/script.js"></script>
-   </body>
+        </ul>
+    </footer>
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI51QScmQL28gta6zQtTwL-teUDyBp7FU&libraries=places&v=weekly&v=beta&map_ids=23105">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ff273226c8fd8c2"></script>
+</body>
 </html>
