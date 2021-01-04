@@ -191,7 +191,6 @@ div#map {
 
 .weather-text{
    text-align: left; 
-   font-size: 50px;
 }
 
 .weather-sub{
@@ -210,12 +209,14 @@ div#map {
 }
 
 .form-header {
-    font-size: 24px;
-    font-weight: 200;
+    font-size: 22px;
+    font-weight: 300;
+    color: #11466A;
+    letter-spacing: 2px;
 }
 
 .form-sub {
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Lora", sans-serif;
     font-weight: 200;
     font-style: italic;
@@ -291,12 +292,10 @@ footer {
 
 h1 {
   font-size: 60px;
-
 }
 
 h2 {
   font-size: 36px;
-
 }
 
 .button-text {
@@ -308,6 +307,10 @@ h2 {
 }
 .container-fluid {
     padding-left: 15px;
+}
+
+.weather-text{ 
+   font-size: 50px;
 }
 
 }
