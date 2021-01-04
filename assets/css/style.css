@@ -108,6 +108,13 @@ h5 {
     text-align: center;
 }
 
+.hero-do-text {
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 300;
+}
+
 /*------------ hero to-do section ------------*/
 
 /*code for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
@@ -187,6 +194,43 @@ div#map {
 .weather-sub{
   text-align: left;
   font-size: 28px;
+}
+
+/*------------ contact form ------------*/
+
+.form-container {
+  height: 100vh;
+  background: url("../images/barceloneta.jpg") no-repeat bottom right fixed;
+  background-size: cover;
+  padding-top: 30px;
+
+}
+
+.form-header {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.form-sub {
+    font-size: 16px;
+    font-family: "Lora", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: #11466A;
+}
+
+.box-size {
+    height: 100px;
+}
+
+.contact-send {
+    font-family: "Montserrat", sans-serif;
+   
+     font-weight: 200;
+  font-size: 16px;
+  color: #fff;
+  background: #11466A;
 }
 
 /*------------ scroll to top button ------------*/
@@ -273,4 +317,20 @@ h2 {
    padding-top: 30%;
 
 }
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
 }
