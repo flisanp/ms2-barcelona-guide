@@ -19,9 +19,9 @@ h2 {
   font-family: 'Lora', sans-serif;
   font-weight: 500;
   font-style: italic;
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 1px;
-  color: #11466A;
+  color: #fff;
 }
 
 h3 {
@@ -93,6 +93,18 @@ h5 {
   justify-content: center;
 }
 
+/*https://cssanimation.rocks/build-hero-header/ */
+.hero-header-container:before {
+  background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.4));
+  content: "";
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
 .jumbotron {
   background-color: transparent;
   
@@ -107,17 +119,11 @@ h5 {
   text-align: center;
 }
 
-.hero-info-text {
-    padding-top: 1rem;
-    text-align: center;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-}
-
 .hero-do-text {
     text-align: center;
     font-size: 26px;
     font-weight: 600;
+    padding-top: 3rem;
     color: #fff;
 }
 
@@ -126,7 +132,7 @@ h5 {
 /*code for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
 
 .btn {
-  width: 150px !important;
+  width: 130px !important;
 }
 
 .icons {
@@ -136,9 +142,6 @@ h5 {
   
 }
 
-.btn-pos {
-  margin-top: 20px;
-}
 
 .button-text {
   text-transform: uppercase;
@@ -296,8 +299,13 @@ h2 {
   font-size: 36px;
 }
 
+
 .button-text {
   font-size: 26px;
+}
+
+.btn-pos {
+  margin-top: 20px;
 }
 
 .btn {
