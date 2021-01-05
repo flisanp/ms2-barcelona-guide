@@ -5,10 +5,10 @@
    window.weatherWidgetConfig.push({
        selector:".weatherWidget",
        apiKey:"T4HHCRVBQ4B6T6NQQEZNEWYXV", 
-       location:"Barcelona, Spain", //Enter an address
-       unitGroup:"metric", //"us" or "metric"
-       forecastDays:5, //how many days forecast to show
-       title:"Barcelona", //optional title to show in the 
+       location:"Barcelona, Spain", 
+       unitGroup:"metric", 
+       forecastDays:7, 
+       title:"Barcelona", 
        showTitle:true, 
        showConditions:true
    });

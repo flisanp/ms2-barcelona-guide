@@ -427,6 +427,7 @@ $("#eat").click(function () {
 
         markers.push(marker);
     }
+    //close previously opened infowindow when clicking on a new marker
     function closeOtherInfo() {
          if (infoObj.length > 0) {
              infoObj[0].set("marker", null);
@@ -476,6 +477,7 @@ $("#sleep").click(function () {
 
         markers.push(marker);
     }
+    //close previously opened infowindow when clicking on a new marker
     function closeOtherInfo() {
          if (infoObj.length > 0) {
              infoObj[0].set("marker", null);
@@ -524,6 +526,7 @@ $("#discover").click(function () {
 
         markers.push(marker);
     }
+    //close previously opened infowindow when clicking on a new marker
     function closeOtherInfo() {
          if (infoObj.length > 0) {
              infoObj[0].set("marker", null);
@@ -557,7 +560,8 @@ $("#shop").click(function () {
             icon: icons[shop[i].type].icon,
             map: map,
         });
-        //create info window
+
+        //create info window 
         const infowindow = new google.maps.InfoWindow({
             content: shop[i].information,
         });
@@ -571,6 +575,8 @@ $("#shop").click(function () {
 
         markers.push(marker);
     }
+
+    //close previously opened infowindow when clicking on a new marker
     function closeOtherInfo() {
          if (infoObj.length > 0) {
              infoObj[0].set("marker", null);
