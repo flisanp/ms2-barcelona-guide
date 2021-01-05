@@ -404,7 +404,6 @@ $("#eat").click(function () {
         lng: 2.154007
     });
 
-
     for (let i = 0; i < eat.length; i++) {
 
         const marker = new google.maps.Marker({
@@ -418,12 +417,23 @@ $("#eat").click(function () {
             content: eat[i].information,
         });
 
+        var infoObj= [];
+
         marker.addListener("click", function () {
+            closeOtherInfo();
             infowindow.open(map, marker);
+            infoObj[0] = infowindow;
         });
 
         markers.push(marker);
     }
+    function closeOtherInfo() {
+         if (infoObj.length > 0) {
+             infoObj[0].set("marker", null);
+             infoObj[0].close();
+             infoObj[0].length = 0;
+         }
+     }     
 });
 
 //Clear away any existing markers 
@@ -455,12 +465,24 @@ $("#sleep").click(function () {
         const infowindow = new google.maps.InfoWindow({
             content: sleep[i].information,
         });
+
+        var infoObj= [];
+
         marker.addListener("click", function () {
+            closeOtherInfo();
             infowindow.open(map, marker);
+            infoObj[0] = infowindow;
         });
 
         markers.push(marker);
     }
+    function closeOtherInfo() {
+         if (infoObj.length > 0) {
+             infoObj[0].set("marker", null);
+             infoObj[0].close();
+             infoObj[0].length = 0;
+         }
+     }     
 });
 
 //Clear away any existing markers 
@@ -492,12 +514,23 @@ $("#discover").click(function () {
         const infowindow = new google.maps.InfoWindow({
             content: discover[i].information,
         });
+        var infoObj= [];
+
         marker.addListener("click", function () {
+            closeOtherInfo();
             infowindow.open(map, marker);
+            infoObj[0] = infowindow;
         });
 
         markers.push(marker);
     }
+    function closeOtherInfo() {
+         if (infoObj.length > 0) {
+             infoObj[0].set("marker", null);
+             infoObj[0].close();
+             infoObj[0].length = 0;
+         }
+     }     
 });
 
 //Clear away any existing markers 
@@ -528,10 +561,21 @@ $("#shop").click(function () {
         const infowindow = new google.maps.InfoWindow({
             content: shop[i].information,
         });
+        var infoObj= [];
+
         marker.addListener("click", function () {
+            closeOtherInfo();
             infowindow.open(map, marker);
+            infoObj[0] = infowindow;
         });
-        
+
         markers.push(marker);
     }
+    function closeOtherInfo() {
+         if (infoObj.length > 0) {
+             infoObj[0].set("marker", null);
+             infoObj[0].close();
+             infoObj[0].length = 0;
+         }
+     }     
 });
