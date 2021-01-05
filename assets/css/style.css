@@ -26,10 +26,10 @@ h2 {
 
 h3 {
   font-family: "Lora", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
+  font-style: italic;
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: #11466A;
 }
 
@@ -54,6 +54,9 @@ h5 {
 
 .nav-link{
   color: #11466A !important;
+}
+.navbar-text-style{
+    font-size: 24px;
 }
 
 .menu {
@@ -185,18 +188,11 @@ div#map {
   justify-content: left;
 }
 
-.weather {
-    padding-top: 70%;  
-}
-
 .weather-text{
    text-align: left; 
+   font-size: 24px;
 }
 
-.weather-sub{
-  text-align: left;
-  font-size: 28px;
-}
 
 /*------------ contact form ------------*/
 
@@ -251,6 +247,8 @@ div#map {
   color: white; 
   cursor: pointer; 
   font-size: 40px; 
+  border-radius: 5%;
+  padding: 10px;
 }
 
 #myBtn:hover {
@@ -310,7 +308,7 @@ h2 {
 }
 
 .weather-text{ 
-   font-size: 50px;
+   font-size: 28px;
 }
 
 }
