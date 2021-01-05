@@ -1,14 +1,22 @@
-const settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://community-open-weather-map.p.rapidapi.com/weather?q=barcelona&lat=41.390205&lon=2.154007&callback=test&id=2172797&lang=null&units=%22metric%22%20or%20%22imperial%22&mode=xml%2C%20html",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-key": "a31db3836bmsh573f42960ce6a02p1803f5jsn3d90afba6b57",
-		"x-rapidapi-host": "community-open-weather-map.p.rapidapi.com"
-	}
-};
+/*weather data API from visual crossing: https://www.visualcrossing.com/weather-api*/
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
+//weather forecast
+   window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
+   window.weatherWidgetConfig.push({
+       selector:".weatherWidget",
+       apiKey:"T4HHCRVBQ4B6T6NQQEZNEWYXV", 
+       location:"Barcelona, Spain", //Enter an address
+       unitGroup:"metric", //"us" or "metric"
+       forecastDays:5, //how many days forecast to show
+       title:"Barcelona", //optional title to show in the 
+       showTitle:true, 
+       showConditions:true
+   });
+  
+   (function() {
+   var d = document, s = d.createElement('script');
+   s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+
