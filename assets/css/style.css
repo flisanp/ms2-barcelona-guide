@@ -21,7 +21,7 @@ h2 {
   font-style: italic;
   font-size: 28px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #ffffff;
 }
 
 h3 {
@@ -92,18 +92,6 @@ h5 {
   align-items: center;
   justify-content: center;
 }
-
-/*https://cssanimation.rocks/build-hero-header/ */
-.hero-header-container:before {
-  background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.4));
-  content: "";
-  position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
 
 .jumbotron {
   background-color: transparent;
@@ -331,3 +319,4 @@ h2 {
 
 }
 }
+
