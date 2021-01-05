@@ -14,11 +14,13 @@ This website is a city guide to Barcelona and aims to provide information about 
 
 #### The Goals For This Website Is To: 
 - Be user-friendly.
-- Give users information about the city of Barcelona.
-- Give users information about interesting places to visit during their stay.
+- Give users information about the best places in the city of Barcelona.
 - Let users know about good restaurants, shops and hotels.
+- Give users information about interesting places to visit during their stay.
 - Provide a map with markers so that users easy can navigate and find what they are looking for.
-- Provide the citys weather information.
+- Provide the citys weather forecast.
+- Make it easy for users to share the site.
+- Have the possibility to ask questions and to give feedback and tips to the site owner.
 
 #### User Stories
 
@@ -26,14 +28,15 @@ This website is a city guide to Barcelona and aims to provide information about 
 2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit.
 3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel.
 4. As a traveller aiming to visit Barcelona I would like to see the weather forecast to better plan my packing for the trip.
-5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I found.
-6. 
+5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I've found to my travel companions.
+6.  
 
 
 #### Design 
 My main colors for the project is yellow, #FFCE0A, and blue, #11466A, and are supposed to represent the sun and the ocean as this is something I strongly associate with Barcelona. The yellow can also be found in the flag of Catalonia and the blue is recurring in Gaudís mosaic which can be seen scattered over large parts of the city. In fact you can hardly talk about Barcelona without mentioning Gaudí and that is why I have choosen the iconic image over Parc Güell as my hero image that will greet you when you enter the site. 
-I wanted the design to be easy navigated and for the user to immdiately understand what the purpose of the site is. Four different buttons with categories that are linked straight to the map depending on what you’re intrested in finding in the city. For example if you’re intrested in finding restaurants you click on the button called EAT and you will get locations on the map for my top picks. When you click on the markers you will open a info window with the name of the restaurant and a link to the website.
-
+I wanted the design to be easy navigated and for the user to immidately understand what the purpose of the site is. 
+I therefore choose to have a headline that clearly states that it is a travel guide to Barcelona and underneath that I have four call to action buttons with different categories depending on what you want to do in the city. The buttons are linked straight to a Google map and shows markers for different categories. Each category has it's own markers with icons that clearly states what category they have clicked so that will be no confusion when you're on the map. All markers open an info window when you click on them and in that info window you will find the name of the location followed by some further information about the place such as for instance a link to their website which will make it easy for the user to get more information about places they find interesting. When you click on a new info window the previous one closes so that the map don't gets cluttered. I wanted to map to be easy to navigate on and that is why I choose to have it in full screen. 
+I also wanted to have a weather forecast so that users can plan their packing and activities accordingly, this is located at the bottom of the page but there is also a link called WEATHER in the navbar so that users easy can find it at all time.
 
 #### Wireframes
 - [Home]
@@ -44,13 +47,17 @@ I wanted the design to be easy navigated and for the user to immdiately understa
 
 # Features
 
-**Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on.
+**Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on. The navbar has links to the landing page *HOME*, the weather forecast *WEATHER* and to the contact form *CONTACT*.
 
-**Home** - The home page features a hero image with the text "Barcelona, city guide" and four call to action buttons that guides the user to the different categories on the map. The image shows a picture over Parc Güell that is one of the main attractions to visit when you’re in Barcelona. 
+**Home** - The landing page features a hero image with a photo of one of Barelonas main attractions Parc Güell. On top of the photo is a heading with the text Barcelona city guide to clearly state what the site is about. 
+Underneath the heading is four *Call to action buttons* that are linked to a *Google map*. The map, which is the most significant feature on the site, is located undeneath the buttons and gives a view over Barcelona. When the user clicks on a button different *markers* appear on the map and every marker has an icon that clearly indicates which category the user is currently viewing. When the user clicks on a marker they open a *info window* where they can find the name of the location and the prime information. In every info window there is a link to the locations website so the user easy can navigate to find out more about the places they are intrested in. When you scroll down on the page a scroll to top button appears that gives the user a shortcut to the top of the page. 
+In the bottom left corner the user can find a *share button* that expands when they click it and opens up several ways for the user to share the site on different social media platforms. They also have the possibility to send it by mail or to print it. 
 
-**Contact** - The contact page features a form where the user can enter their name, email address and a message. 
+**Weather** - The *weather forecast* is located below the map and also reachable at all times through a link in the navbar. It's displaying a 7 day forecast over Barcelona with distinct icons whick gives the user an indication of what the weather will look like the following week. To the left it displays the current weather.
 
-**Footer** - Exists on every page. Located in the center of the footer are four social media icons. The links have the same hover effects as the navbar and changes color when hovering over them.
+**Contact** - The *contact form* is reachable through the navbar at all times. The user can give feedback, tips or ask questions and when filled out properly it will send an email to the site owner through Mailchimp.
+
+**Footer** - Exists on the bottom of every page. Located in the center of the footer are four icons with links to the sites social media platforms. The links have the same hover effects as the navbar and changes color when hovering over them.
 
 #### Features Left To Implement
 
