@@ -26,7 +26,7 @@ This website is a city guide to Barcelona and aims to provide information about 
 2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit.
 3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel.
 4. As a traveller aiming to visit Barcelona I would like to see the weather forecast to better plan my packing for the trip.
-5. 
+5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I found.
 6. 
 
 
@@ -70,6 +70,7 @@ I wanted the design to be easy navigated and for the user to immdiately understa
 - [A11y](https://color.a11y.com) - The developer used A11y for checking the websites color contrast accessibility 
 - [Am I Responsive?](http://ami.responsivedesign.is/) - The developer used Am I Responsive? for creating the mockup image in the beginning of this README file.
 - [InDesign](https://www.adobe.com/se/products/indesign.html) The developer used InDesign for creating the favicon.
+- [Addthis](https://www.addthis.com)
 
 # Testing
 
@@ -97,6 +98,10 @@ I wanted the design to be easy navigated and for the user to immdiately understa
 
 - Info window on markers only shows last location.
     - changed marker and infowindow to const types instead of var. They need to be const as per the google documentation.
+
+- Contrasting issues
+
+- Menu on mobile overlapping text on the landing page
 
 
 
@@ -134,6 +139,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 Weather API
 Google Maps API
+https://www.addthis.com
 
 [Stack Overflow](https://stackoverflow.com/) how to store icons for google map markers on local folder: https://stackoverflow.com/questions/12652287/using-a-local-folder-how-to-store-google-markers
 
