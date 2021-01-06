@@ -29,7 +29,7 @@ This website is a city guide to Barcelona and aims to provide information about 
 3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel.
 4. As a traveller aiming to visit Barcelona I would like to see the weather forecast to better plan my packing for the trip.
 5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I've found to my travel companions.
-6.  
+
 
 
 #### Design 
@@ -127,10 +127,10 @@ Even though I wanted to have a clean site where you'll just find the top picks i
   ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
 
     - Tutor guide me to where I could look for errors and I found one in consol declaring that `infoObj`was not defined: 
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/not-defined-error..png)
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/67fba13d28ad2ce5d2d424299eb7791cb4b36b6e/readme%20assets/bugs/not-defined-error.png)
 
      - Defined `var infoObj= [];`and it was solved.
-    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/not-defined-error.png)
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/67fba13d28ad2ce5d2d424299eb7791cb4b36b6e/readme%20assets/bugs/not-defined-solution.png)
 
 
 - Links in navbar was difficult to read because overlapping text on pages.
