@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 700;
   letter-spacing: 6px;
   text-transform: uppercase;
@@ -79,9 +79,7 @@ h5 {
 
 /*------------ hero image ------------*/
 
-.container-fluid {
-  padding-left: 0;
-}
+
 
 .hero-container {
   height: 100vh;
@@ -95,11 +93,14 @@ h5 {
 
 .jumbotron {
   background-color: transparent;
+  justify-content: center;
+  
 }
 
 .hero-text {
   text-align: center;
-  padding-top: 70%;
+  padding-top: 60%;
+  
 }
 
 .hero-info-text {
@@ -107,7 +108,7 @@ h5 {
   padding-top: 2rem;
   color: #DD654A;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -118,7 +119,7 @@ h5 {
 
 .hero-do-text {
   text-align: center;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 600;
   padding-top: 2rem;
   color: #DD654A;
@@ -138,6 +139,10 @@ h5 {
   width: 20px;
   height: 20px;
   color: white;
+}
+
+.to-do{
+    padding: 10px;
 }
 
 .button-text {
@@ -337,6 +342,15 @@ footer {
   .weather-text {
     font-size: 28px;
   }
+   .hero-text {
+    padding-top: 20%;
+  }
+  .to-do{
+    justify-content: center;
+}
+.hero-do-text {
+    font-size: 24px;
+}
 }
 
 
@@ -344,6 +358,15 @@ footer {
 
 @media only screen and (min-width: 992px) {
   .hero-text {
-    padding-top: 30%;
+    padding-top: 20%;
   }
+
+   .to-do{
+    justify-content: center;
+    padding-top: 4rem;
+}
+.hero-do-text {
+    font-size: 26px;
+}
+
 }
