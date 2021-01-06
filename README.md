@@ -121,11 +121,15 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - Google Maps would not load properly.
     - InitMap being called in the `<body>` instead of as a callback function: `<body onload="initMap()">`
 
-- Trouble with linking buttons to map and showing the correct markers.
-    - markers.push(marker) code was in the wrong place, moved it to inside the preceding for loop.
-
 - Info window on markers only shows last location.
     - changed marker and infowindow to const types instead of var. They need to be const as per the google documentation.
+
+- Issue with previous info window not closing when clicking on a new marker.
+    - I got an error in consol declaring that `infoObj`was not defined: 
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/808e90be0548ca7da6d02284b15f59167aa8f651/readme%20assets/not-defined-error.png)
+
+     - Defined `var infoObj= [];`and it worked.
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/808e90be0548ca7da6d02284b15f59167aa8f651/readme%20assets/not-defined-solution.png)
 
 - Contrasting issues
 
@@ -163,7 +167,7 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 #### Content
 
-To find information on the best locations I've used the following sources:
+To find information about the best locations I've used the following sources:
 
 [Time Out](https://www.timeout.com/barcelona)
 

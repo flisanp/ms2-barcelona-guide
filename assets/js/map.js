@@ -390,8 +390,9 @@ var shop = [{
 
 
 
-// Create markers for restaurants
+
 //https://developers.google.com/maps/documentation/javascript/markers
+// Create markers for restaurants
 
 var i;
 var markers = [];

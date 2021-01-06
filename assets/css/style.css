@@ -68,7 +68,6 @@ h5 {
   padding-right: 20px;
 }
 
-/* code credits for override btn color in Bootstrap: https://stackoverflow.com/questions/28261287/how-to-change-btn-color-in-bootstrap*/
 .menu a:hover {
   color: #FFCE0A!important;
 }
@@ -117,7 +116,7 @@ h5 {
 
 /*------------ hero to-do section ------------*/
 
-/*code for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
+/*code credit for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
 
 .btn {
   width: 130px !important;
