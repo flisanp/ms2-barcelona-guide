@@ -124,14 +124,13 @@ Even though I wanted to have a clean site where you'll just find the top picks i
     - changed marker and infowindow to const types instead of var. They need to be const as per the google documentation.
 
 - Issue with previous info window not closing when clicking on a new marker.
-  ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/issue-markers.png)
+  ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
 
+    - Tutor guide me to where I could look for errors and I found one in consol declaring that `infoObj`was not defined: 
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/not-defined-error..png)
 
-    - I got an error in consol declaring that `infoObj`was not defined: 
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/not-defined-error.png)
-
-     - Defined `var infoObj= [];`and it worked.
-    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/not-defined-solution.png)
+     - Defined `var infoObj= [];`and it was solved.
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/not-defined-error.png)
 
 
 - Links in navbar was difficult to read because overlapping text on pages.
@@ -139,7 +138,7 @@ Even though I wanted to have a clean site where you'll just find the top picks i
    - Added the bootstrap class `bg-white` to the navbar.
 
 - Some contrasting issues where found when I tested the webpage in [A11y](https://color.a11y.com) 
-![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/contrasting-issue.png)
+![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/contrasting-issue.png)
 
 - Menu overlapping text on the landing page when checking responsiveness on mobile
 ![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/menu-overlapping.png)
