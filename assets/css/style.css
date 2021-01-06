@@ -103,14 +103,12 @@ h5 {
 
 .jumbotron {
   background-color: transparent;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 
 .hero-text {
   text-align: center;
   padding-top: 60%;
-  
 }
 
 .hero-info-text {
@@ -135,6 +133,38 @@ h5 {
   padding-top: 2rem;
   color: #fff;
   text-transform: uppercase;
+}
+
+/*code credit for animation on text:https://cssanimation.rocks/animating-hero-header/*/
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+.hero-text {
+  animation-delay: .6s;
+}
+
+.hero-sub{
+animation-delay: .8s;
+}
+
+.hero-info-text{
+animation-delay: 1s;
+}
+
+.hero-do-text{
+animation-delay: 1.1s;
 }
 
 /*------------ hero to-do section ------------*/
@@ -194,8 +224,9 @@ div#map {
 
 /*------------ weather ------------*/
 
+
 .weather-text {
-  text-align: left;
+  text-align: center;
   color: #11466A;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -210,23 +241,23 @@ div#map {
 
 .visualcrossing-wx-widget .period .date {
   color:#fff !important;
-  font-size: 17px !important;
+  font-size: 14px !important;
 }
 
 .visualcrossing-wx-widget .title {
   color:#fff !important;
+  font-size: 16px !important;
 }
 
 .sr-only{
   background-color: black;
 }
 
-
 /*------------ contact form ------------*/
 
-.form-container {
+#form-container {
   height: 100vh;
-  background: url("../images/barcelona-hero-image5.jpg") no-repeat bottom right fixed;
+  background: url("../images/barcelona-hero-contact.jpg") no-repeat bottom right fixed;
   background-size: cover;
   padding-top: 30px;
 }
@@ -384,5 +415,4 @@ footer {
 }
 
 }
-
 
