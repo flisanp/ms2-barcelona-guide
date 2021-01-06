@@ -118,19 +118,23 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 
 #### During Development I Fixed The Following Bugs
 
-- Google Maps would not load properly.
+- Google Maps would not load.
     - InitMap being called in the `<body>` instead of as a callback function: `<body onload="initMap()">`
 
 - Info window on markers only shows last location.
     - changed marker and infowindow to const types instead of var. They need to be const as per the google documentation.
 
 - Issue with previous info window not closing when clicking on a new marker.
+  ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/issue-markers.png)
+
+
     - I got an error in consol declaring that `infoObj`was not defined: 
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/808e90be0548ca7da6d02284b15f59167aa8f651/readme%20assets/not-defined-error.png)
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/not-defined-error.png)
 
      - Defined `var infoObj= [];`and it worked.
-    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/808e90be0548ca7da6d02284b15f59167aa8f651/readme%20assets/not-defined-solution.png)
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/not-defined-solution.png)
 
+- Issue with w
 - Contrasting issues
 
 - Menu on mobile overlapping text on the landing page
