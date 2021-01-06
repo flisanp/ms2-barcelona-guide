@@ -263,7 +263,6 @@ div#map {
   background-size: cover;
   padding-top: 30px;
   justify-content: center;
-
 }
 
 .form-header {
@@ -292,6 +291,12 @@ div#map {
   font-size: 16px;
   color: #fff;
   background: #11466A;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+         
 }
 
 #mc_embed_signup .asterisk{
