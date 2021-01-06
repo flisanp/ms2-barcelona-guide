@@ -221,7 +221,6 @@ div#map {
   color: #127BF2!important;
 }
 
-
 /*------------ weather ------------*/
 
 #weather-section{
@@ -296,7 +295,7 @@ div#map {
 }
 
 #mc_embed_signup .asterisk{
-    color: red !important;
+    color: #B30000 !important;
 }
 
 #mc_embed_signup .button{
