@@ -31,7 +31,6 @@ This website is a city guide to Barcelona and aims to provide information about 
 5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I've found to my travel companions.
 
 
-
 #### Design 
 My main colors for the project is yellow, #FFCE0A, and blue, #11466A, and are supposed to represent the sun and the ocean as this is something I strongly associate with Barcelona. The yellow can also be found in the flag of Catalonia and the blue is recurring in Gaudís mosaic which can be seen scattered over large parts of the city. In fact you can hardly talk about Barcelona without mentioning Gaudí and that is why I have choosen the iconic image over Parc Güell as my hero image that will greet you when you enter the site. 
 I wanted the design to be easy navigated and for the user to immidately understand what the purpose of the site is. 
@@ -42,7 +41,7 @@ I also wanted to have a weather forecast so that users can plan their packing an
 - [Home](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/home.png)
 - [Map](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/map.png)
 - [Weather](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/weather.png) 
-- [Contact](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/contact.png)
+- [Contact](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/wireframes/contact.png)
 
 # Features
 
@@ -126,22 +125,22 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - Issue with previous info window not closing when clicking on a new marker.
   ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
 
-    - Tutor guide me to where I could look for errors and I found one in consol declaring that `infoObj`was not defined: 
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/67fba13d28ad2ce5d2d424299eb7791cb4b36b6e/readme%20assets/bugs/not-defined-error.png)
+    - I found one error in consol declaring that `infoObj` was not defined: 
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png)
 
      - Defined `var infoObj= [];`and it was solved.
-    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/67fba13d28ad2ce5d2d424299eb7791cb4b36b6e/readme%20assets/bugs/not-defined-solution.png)
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
 
 
 - Links in navbar was difficult to read because overlapping text on pages.
-![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/menu-links-overlapping.png)
+![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/menu-links-overlapping.png)
    - Added the bootstrap class `bg-white` to the navbar.
 
 - Some contrasting issues where found when I tested the webpage in [A11y](https://color.a11y.com) 
 ![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/contrasting-issue.png)
 
 - Menu overlapping text on the landing page when checking responsiveness on mobile
-![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/menu-overlapping.png)
+![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/menu-overlapping.png)
 
 
 
