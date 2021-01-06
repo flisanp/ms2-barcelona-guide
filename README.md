@@ -39,11 +39,10 @@ I therefore choose to have a headline that clearly states that it is a travel gu
 I also wanted to have a weather forecast so that users can plan their packing and activities accordingly, this is located at the bottom of the page but there is also a link called WEATHER in the navbar so that users easy can find it at all time.
 
 #### Wireframes
-- [Home]
-- [Gallery]
-- [About] 
-- [Stockists]
-- [Contact]
+- [Home](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/home.png)
+- [Map](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/map.png)
+- [Weather](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/weather.png) 
+- [Contact](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/contact.png)
 
 # Features
 
@@ -134,7 +133,7 @@ Even though I wanted to have a clean site where you'll just find the top picks i
      - Defined `var infoObj= [];`and it worked.
     ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/not-defined-solution.png)
 
-- Issue with w
+
 - Contrasting issues
 
 - Menu on mobile overlapping text on the landing page
