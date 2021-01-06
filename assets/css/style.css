@@ -81,7 +81,7 @@ h5 {
 
 .hero-container {
   height: 100vh;
-  background: url("../images/barcelona-hero-image4.jpg") no-repeat bottom left fixed;
+  background: url("../images/barcelona-hero-image.jpg") no-repeat top left fixed;
   background-size: cover;
   padding-bottom: 20%;
   background-color: #11466A;
