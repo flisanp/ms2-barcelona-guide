@@ -124,29 +124,35 @@ Even though I wanted to have a clean site where you'll just find the top picks i
     - changed marker and infowindow to const types instead of var. They need to be const as per the google documentation.
 
 - Issue with previous info window not closing when clicking on a new marker.
-  ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/issue-markers.png)
+  ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/issue-markers.png)
 
 
     - I got an error in consol declaring that `infoObj`was not defined: 
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/not-defined-error.png)
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/not-defined-error.png)
 
      - Defined `var infoObj= [];`and it worked.
-    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/c5d55ce795b5e405592dd7c784a2f618475359f7/readme%20assets/bugs/not-defined-solution.png)
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/not-defined-solution.png)
 
 
-- Contrasting issues
+- Links in navbar was difficult to read because overlapping text on pages.
+![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/menu-links-overlapping.png)
+   - Added the bootstrap class `bg-white` to the navbar.
 
-- Menu on mobile overlapping text on the landing page
+- Some contrasting issues where found when I tested the webpage in [A11y](https://color.a11y.com) 
+![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/contrasting-issue.png)
+
+- Menu overlapping text on the landing page when checking responsiveness on mobile
+![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/cfa92c0d8d9a5cc97cad92a519cafd2c45419fb6/readme%20assets/bugs/menu-overlapping.png)
 
 
 
 #### HTML Testing
 https://validator.w3.org/
-No errors or warnings to show.
+
 
 #### CSS Testing 
 https://jigsaw.w3.org/css-validator/
-No errors or warnings to show.
+
 
 #### JS Testing
 https://jshint.com/
@@ -193,7 +199,6 @@ How to store icons for google map markers on local folder: [Stack Overflow](http
 Scroll to top button: [w3schools.com](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 
-
 #### Media
 
 - Hero Image on Home page by [Vitor Monteiro on Unsplash](https://unsplash.com/@vitorhugomonteiro) 
@@ -202,6 +207,8 @@ Scroll to top button: [w3schools.com](https://www.w3schools.com/howto/howto_js_s
 
 #### Acknowledgements
 
+- To tutor support for guiding through bug issues
+- To mentor Sinead O'Brien for helpful feedback
 
 
 
