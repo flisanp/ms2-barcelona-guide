@@ -133,14 +133,14 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 
 
 - Links in navbar was difficult to read because overlapping text on pages.
-![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/menu-links-overlapping.png)
+![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/982d7431f2e7505f69ab53fff532b2c1bb37fd5c/readme%20assets/bugs/menu-links-overlapping.png)
    - Added the bootstrap class `bg-white` to the navbar.
 
 - Some contrasting issues where found when I tested the webpage in [A11y](https://color.a11y.com) 
 ![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/contrasting-issue.png)
 
 - Menu overlapping text on the landing page when checking responsiveness on mobile
-![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/menu-overlapping.png)
+![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/982d7431f2e7505f69ab53fff532b2c1bb37fd5c/readme%20assets/bugs/menu-overlapping.png)
 
 
 
