@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: #555;
@@ -50,13 +48,15 @@ h5 {
   color: #11466A;
 }
 
+
 /*------------ header/navbar ------------*/
 
-.nav-link{
+.nav-link {
   color: #11466A !important;
 }
-.navbar-text-style{
-    font-size: 24px;
+
+.navbar-text-style {
+  font-size: 24px;
 }
 
 .menu {
@@ -76,10 +76,11 @@ h5 {
   color: #FFCE0A!important;
 }
 
+
 /*------------ hero image ------------*/
 
 .container-fluid {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .hero-container {
@@ -94,12 +95,11 @@ h5 {
 
 .jumbotron {
   background-color: transparent;
-  
 }
 
 .hero-text {
-   text-align: center; 
-   padding-top: 70%;
+  text-align: center;
+  padding-top: 70%;
 }
 
 .hero-sub {
@@ -107,14 +107,16 @@ h5 {
 }
 
 .hero-do-text {
-    text-align: center;
-    font-size: 26px;
-    font-weight: 600;
-    padding-top: 3rem;
-    color: #fff;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  padding-top: 3rem;
+  color: #fff;
 }
 
+
 /*------------ hero to-do section ------------*/
+
 
 /*code credit for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
 
@@ -126,9 +128,7 @@ h5 {
   width: 20px;
   height: 20px;
   color: white;
-  
 }
-
 
 .button-text {
   text-transform: uppercase;
@@ -146,10 +146,11 @@ h5 {
   border-color: #FFCE0A;
 }
 
+
 /*------------ map ------------*/
 
 div#map {
-    min-height: 360px;
+  min-height: 360px;
 }
 
 #map {
@@ -158,13 +159,14 @@ div#map {
 }
 
 .info-window a {
-    text-decoration: none;
-    color: #11466A !important;
+  text-decoration: none;
+  color: #11466A !important;
 }
 
 .info-window a:hover {
   color: #FFCE0A!important;
 }
+
 
 /*------------ weather ------------*/
 
@@ -178,11 +180,10 @@ div#map {
   justify-content: left;
 }
 
-.weather-text{
-   text-align: left; 
-   font-size: 24px;
-   color: #11466A; 
-
+.weather-text {
+  text-align: left;
+  font-size: 24px;
+  color: #11466A;
 }
 
 
@@ -193,27 +194,26 @@ div#map {
   background: url("../images/barceloneta.jpg") no-repeat bottom right fixed;
   background-size: cover;
   padding-top: 30px;
-
 }
 
 .form-header {
-    font-size: 22px;
-    font-weight: 300;
-    color: #11466A;
-    letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: 300;
+  color: #11466A;
+  letter-spacing: 2px;
 }
 
 .form-sub {
-    font-size: 14px;
-    font-family: "Lora", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-    letter-spacing: 2px;
-    color: #11466A;
+  font-size: 14px;
+  font-family: "Lora", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 2px;
+  color: #11466A;
 }
 
 .box-size {
-    height: 100px;
+  height: 100px;
 }
 
 .contact-send {
@@ -224,28 +224,32 @@ div#map {
   background: #11466A;
 }
 
+
 /*------------ scroll to top button ------------*/
 
+
 /* code for scroll to top button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
 #myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 55px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color: #11466A; 
-  color: white; 
-  cursor: pointer; 
-  font-size: 40px; 
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 55px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #11466A;
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
   border-radius: 5%;
   padding: 10px;
 }
 
 #myBtn:hover {
-  background-color: #FFCE0A; 
+  background-color: #FFCE0A;
 }
+
 
 /*------------ footer ------------*/
 
@@ -273,49 +277,44 @@ footer {
   color: #FFCE0A;
 }
 
+
 /*------------ media queries ------------*/
 
+
 /*Device breakpoints taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+
+
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
-
-
-h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-
-.button-text {
-  font-size: 26px;
-}
-
-.btn-pos {
-  margin-top: 20px;
-}
-
-.btn {
-  width: 180px !important;
-}
-.container-fluid {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .button-text {
+    font-size: 26px;
+  }
+  .btn-pos {
+    margin-top: 20px;
+  }
+  .btn {
+    width: 180px !important;
+  }
+  .container-fluid {
     padding-left: 15px;
+  }
+  .weather-text {
+    font-size: 28px;
+  }
 }
 
-.weather-text{ 
-   font-size: 28px;
-}
-
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
-
-.hero-text {
-   padding-top: 30%;
-
+  .hero-text {
+    padding-top: 30%;
+  }
 }
-}
-
