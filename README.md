@@ -14,7 +14,6 @@ This website is a city guide to Barcelona and aims to provide information about 
 
 #### The Goals For This Website Is To: 
 - Be user-friendly.
-- Give users information about the best sights in the city of Barcelona.
 - Let users know about good restaurants, shops and hotels.
 - Give users information about interesting places to visit during their stay.
 - Provide a map with markers for users to easily navigate and find what they are looking for.
@@ -38,9 +37,10 @@ This website is a city guide to Barcelona and aims to provide information about 
 
 #### Design 
 My main colors for the project is two different shades of blue, #11466A, and #127BF2, that are inspired by Gaudís mosaic which can be seen scattered over large parts of the city. In fact you can hardly talk about Barcelona without mentioning Gaudí and that is why I have choosen the iconic image over Parc Güell as a source for my color palette.
+
 ![color palette](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/color-palette.jpg)
 
-I wanted the design to be easyily navigated and for the user to immidately understand what the purpose of the site is. I therefore choose to have a headline that clearly states that it is a travel guide to Barcelona and underneath that I have four call to action buttons with different categories depending on what you want to do in the city. The buttons are linked straight to a Google map and shows markers for different categories. Each category has it's own markers with icons that clearly states what category that have been clicked so that there will be no confusion when they're on the map. All markers open an info window when you click on them and in that info window you will find the name of the location followed by some further information about the place such as a link to their website which will make it easy for the user to get more information about places they find interesting. When you click on a new info window the previous one closes so that the map doesn't get cluttered. I wanted the map to be easy to navigate and that is why I choose to have it in full screen. 
+I wanted the design to be easily navigated and for the user to immidately understand what the purpose of the site is. I therefore choose to have a headline that clearly states that it is a travel guide to Barcelona and underneath that I have four call to action buttons with different categories depending on what you want to do in the city. The buttons are linked straight to a Google map and shows markers for different categories. Each category has it's own markers with icons that clearly states what category that have been clicked so that there will be no confusion when they're on the map. All markers open an info window when you click on them and in that info window you will find the name of the location followed by some further information about the place such as a link to their website which will make it easy for the user to get more information about places they find interesting. When you click on a new info window the previous one closes so that the map doesn't get cluttered. I wanted the map to be easy to navigate and that is why I choose to have it in full screen. 
 I also wanted to have a weather forecast so that users can plan their packing and activities accordingly, this is located below the map but there is also a link called WEATHER in the navbar for users to easily find it at all time.
 
 # Features
@@ -48,7 +48,7 @@ I also wanted to have a weather forecast so that users can plan their packing an
 **Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on. The navbar has links to the landing page *HOME*, the weather forecast *WEATHER* and to the contact form *CONTACT*.
 
 **Home** - The landing page features a hero image and on top of the image is a heading with the text "Barcelona city guide" to clearly state what the site is about. 
-Underneath the heading are four *Call to action buttons* that are linked to a *Google map*. The map, which is the most significant feature on the site, is located undeneath the buttons and gives a view over Barcelona. When the user clicks on a button different *markers* appear on the map and every marker has an icon that clearly indicates which category the user is currently viewing. When the user clicks on a marker a *info window* opens where they can find the name of the location and the prime information. In every info window there is a link to the locations website so the user easyily can find out more about the places they are interested in. When you scroll down the page a scroll to top button appears that gives the user a shortcut to the top of the page. 
+Underneath the heading are four *Call to action buttons* that are linked to a *Google map*. The map, which is the most significant feature on the site, is located undeneath the buttons and gives a view over Barcelona. When the user clicks on a button different *markers* appear on the map and every marker has an icon that clearly indicates which category the user is currently viewing. When the user clicks on a marker a *info window* opens where they can find the name of the location and the prime information. In every info window there is a link to the locations website so the user easily can find out more about the places they are interested in. When you scroll down the page a scroll to top button appears that gives the user a shortcut to the top of the page. 
 In the bottom left corner the user can find a toggle *share button* that expands when they click it and provides the user  with several ways to share the site on different social media platforms. They also have the possibility to send it by mail or to print it. 
 
 **Weather** - The *weather forecast* is located below the map and also reachable at all times through a link in the navbar. It's displaying a 7 day forecast over Barcelona with distinct icons which gives the user an indication of what the weather will look like the following week. To the left it displays the current weather.
@@ -104,7 +104,7 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - Links to social media platforms works and opens in a new tab window.
 
 **Responsiveness**
-I manually tested the responsiveness on all available devices in DevTools. Galaxy fold didn't display well, this is something I will fix in the future.
+I manually tested the responsiveness on all available devices in DevTools. Galaxy fold didn't display well, this is something I will have to fix in the future.
 ![galaxy fold](https://github.com/flisanp/ms2-barcelona-guide/blob/2825bc3a2b015e895ed93e0e7798f483941c87b0/readme%20assets/bugs/galaxy-fold.png)
 
 #### Testing User Stories 
@@ -133,8 +133,10 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
   ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
 
     - I found one error in consol declaring that `infoObj` was not defined.
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png) ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
-    - Defined `var infoObj= [];`
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png) 
+      - Defined `var infoObj= [];`
+    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
+  
 
 - Links in navbar was difficult to read because overlapping text on pages.
 ![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/5b2719de928c21d56b34213f628b4a3a61b8b030/readme%20assets/bugs/menu-links-overlapping.png)
@@ -142,6 +144,7 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
 
 - Menu overlapping text on the landing page when checking responsiveness on mobile
 ![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/5b2719de928c21d56b34213f628b4a3a61b8b030/readme%20assets/bugs/menu-overlapping.png)
+ - Added padding to the class `hero-text`
 
 - I had some contrast issues with my design in the beginning. My image and text colors did not work well together.
 ![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/contrasting-issue.png)
@@ -151,7 +154,7 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
     - I changed the background color with css to a dark blue.
 
 - Got warnings in Wave with contrast issues on my implemented weather forecast that had presets. 
-! [contrast weathermap](https://github.com/flisanp/ms2-barcelona-guide/blob/6210319c7eec2490d3b53428f0ced4bf5b4451dc/readme%20assets/bugs/contrast-weathermap.png)
+![contrast weathermap](https://github.com/flisanp/ms2-barcelona-guide/blob/6210319c7eec2490d3b53428f0ced4bf5b4451dc/readme%20assets/bugs/contrast-weathermap.png)
     - I had to override the presets by adding !important to css.
 
 #### HTML Testing
@@ -160,20 +163,19 @@ https://validator.w3.org/ - No errors or warnings to show.
 
 
 #### CSS Testing 
-https://jigsaw.w3.org/css-validator/ - showed 2 warnings regarding bootstrap implement.
+https://jigsaw.w3.org/css-validator/ - showed 2 warnings regarding bootstrap presets.
 ![css](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/css-valid.png)
 
 
 #### JS Testing
 https://jshint.com/ - 
+weather.js - No errors or warnings to show
 script.js ![script](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/script-js.png)
 map.js ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/map-js.png)![map](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/map-unused.png)
-weather.js - No errors or warnings to show
-
 
 Warnings regarding *unused variable*: those functions are being called from the HTML file, so within the context of just the js file they are undefined, but they are in use by the HTML file. JShint only validates the JavaScript file and doesn't take into account that functions may be being called from outside the file.
 
-Warning regarding *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, map, infoObj)*: I will not have the time to solve this semantic warning issue now without breaking  the code. The functionality of the code works despite this so I've decided to keep it like that for the time beeing.
+Warning regarding *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, map, infoObj)*: I will not have the time to solve this semantic warning issue now without breaking  the code. The functionality of the code works despite this so I've decided to keep it like that for the time beeing and fix it in the future.
 
 #### Accessibility test
 https://wave.webaim.org - No warnings to show
