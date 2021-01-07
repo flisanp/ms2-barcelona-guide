@@ -109,15 +109,15 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
 
 #### Testing User Stories 
 
-1. As a first time visitor to Barcelona I would like to see where the best tourist attractions are located. ![user story 1]
+1. As a first time visitor to Barcelona I would like to see where the best tourist attractions are located. ![user story 1](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/discover.png) ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/discover-map.png)
     - On the landing page is a call to action button that says "DISCOVER" which leads you to the map that shows markers for the  different locations. The user can click on each marker which opens a info window where the user can find the main information and be directed to a website for further reading.
-2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit. ![user story 2]
+2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit. ![user story 2](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/sleep.png) ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/sleep-map.png)
     - On the landing page is a call to action button that says "SLEEP" which leads you to the map that shows markers for different hotels. The user can click on each marker which opens a info window where the user can find the main information and be directed to a website for further reading.
-3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel. ![user story 3]
+3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel. ![user story 3](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/eat-map.png)
     - On the landing page is a call to action button that says "EAT" which leads you to the map that shows markers for different hotels. The user can click on each marker which opens a info window where the user can find the main information and be directed to a website for further reading.
-4. As a traveller aiming to visit Barcelona I would like to see the weather forecast to better plan my packing for the trip. ![user story 4]
+4. As a traveller aiming to visit Barcelona I would like to see the weather forecast to better plan my packing for the trip. ![user story 4](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/weather-forecast.png)
     - In the navbar on the top right is a link that says WEATHER where the user can find a 7 day weather forecast.
-5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I've found to my travel companions. ![user story 4]
+5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I've found to my travel companions. ![user story 4](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/toggle-sharing-folded.png) ![sharing](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/toggle-sharing-expand.png)
     - In the bottom left on every page is a toggle sharing button that will link the site through all of the most popular social media platforms. The user can also email the link or print it.
 
 
