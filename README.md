@@ -19,8 +19,6 @@ This website is a city guide to Barcelona and aims to provide information about 
 - Provide a map with markers for users to easily navigate and find what they are looking for.
 - Provide the citys weather forecast.
 - Make it easy for users to share the site.
-- Have the possibility to ask questions and to give feedback and tips to the site owner.
-![wireframe contact](https://github.com/flisanp/ms2-barcelona-guide/blob/662688cd339a6933c7d2e105389571ed95887278/readme%20assets/wireframes/contact.png)
 
 #### User Stories
 
@@ -45,15 +43,13 @@ I also wanted to have a weather forecast so that users can plan their packing an
 
 # Features
 
-**Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on. The navbar has links to the landing page *HOME*, the weather forecast *WEATHER* and to the contact form *CONTACT*.
+**Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on. The navbar has links to the landing page *HOME* and the weather forecast *WEATHER*.
 
 **Home** - The landing page features a hero image and on top of the image is a heading with the text "Barcelona city guide" to clearly state what the site is about. 
 Underneath the heading are four *Call to action buttons* that are linked to a *Google map*. The map, which is the most significant feature on the site, is located undeneath the buttons and gives a view over Barcelona. When the user clicks on a button different *markers* appear on the map and every marker has an icon that clearly indicates which category the user is currently viewing. When the user clicks on a marker a *info window* opens where they can find the name of the location and the prime information. In every info window there is a link to the locations website so the user easily can find out more about the places they are interested in. When you scroll down the page a scroll to top button appears that gives the user a shortcut to the top of the page. 
 In the bottom left corner the user can find a toggle *share button* that expands when they click it and provides the user  with several ways to share the site on different social media platforms. They also have the possibility to send it by mail or to print it. 
 
 **Weather** - The *weather forecast* is located below the map and also reachable at all times through a link in the navbar. It's displaying a 7 day forecast over Barcelona with distinct icons which gives the user an indication of what the weather will look like the following week. To the left it displays the current weather.
-
-**Contact** - The *contact form* is reachable below the weather forecast and also through the navbar at all times. The user can give feedback, tips or ask questions and when filled out properly it will send an email to the site owner through Mailchimp.
 
 **Footer** - Exists on the bottom of every page. Located in the center of the footer are four icons with links to the sites social media platforms. The links have the same hover effects as the navbar and changes color as you hover over them.
 
@@ -83,7 +79,6 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - [Techsini](https://techsini.com/multi-mockup/index.php) - The developer used Techsini for creating the mockup image in the beginning of this README file.
 - [InDesign](https://www.adobe.com/se/products/indesign.html) The developer used InDesign for creating the favicon.
 - [Addthis](https://www.addthis.com) The developer used Addthis for the toggle share button.
-- [Mailchimp](https://mailchimp.com) The developer used Mailchimp to create the contact form.
 
 
 # Testing
@@ -98,14 +93,11 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - All links works and opens in a new tab window.
 - Scroll to top button appears on scroll and takes you to the top of the page.
 - Toggle sharing button works and shares the site accordingly.
-- The form checks if it has the correct input before submitting.
-- Response message showing when submitting a message through the contact form.
-- Mail being sent when submitting the contact form.
 - Links to social media platforms works and opens in a new tab window.
 
 **Responsiveness**
 I manually tested the responsiveness on all available devices in DevTools. Galaxy fold didn't display well, this is something I will have to fix in the future.
-![galaxy fold](https://github.com/flisanp/ms2-barcelona-guide/blob/2825bc3a2b015e895ed93e0e7798f483941c87b0/readme%20assets/bugs/galaxy-fold.png)
+![galaxy fold](https://github.com/flisanp/ms2-barcelona-guide/blob/d4a033c7e48d4b2828d4fb14bf498dfe54db6248/readme%20assets/bugs/galaxy-fold.png)
 
 #### Testing User Stories 
 
