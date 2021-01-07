@@ -77,7 +77,9 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - [DevTools](https://developers.google.com/web/tools/chrome-devtools) - The developer has used DevTools to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
 - [Tinypng](https://tinypng.com) - The developer used Tinypng for compressing images.
 - [Freeformatter](https://www.freeformatter.com/) - The developer used Freeformatter for beautifying the code.
-- [A11y](https://color.a11y.com) - The developer used A11y for checking the websites color contrast accessibility 
+- [Wave](https://wave.webaim.org) - The developer used Wave for checking the websites color contrast accessibility. 
+- [ResizeImage](https://resizeimage.net) - The developer used ResizeImage to resize images.
+- [Coolors](https://coolors.co) - The developer used Coolors to create color palette.
 - [Am I Responsive?](http://ami.responsivedesign.is/) - The developer used Am I Responsive? for creating the mockup image in the beginning of this README file.
 - [InDesign](https://www.adobe.com/se/products/indesign.html) The developer used InDesign for creating the favicon.
 - [Addthis](https://www.addthis.com) The developer used Addthis for the toggle share button.
