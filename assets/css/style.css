@@ -108,7 +108,7 @@ h5 {
 
 .hero-text {
   text-align: center;
-  padding-top: 60%;
+  padding-top: 30%;
 }
 
 .hero-info-text {
@@ -131,6 +131,7 @@ h5 {
   font-size: 18px;
   font-weight: 600;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   color: #fff;
   text-transform: uppercase;
 }
@@ -343,6 +344,7 @@ footer {
 
 /* Viewports between 320px and 480px wide */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+     
   
 }
 
@@ -375,10 +377,13 @@ footer {
   }
   .to-do{
     justify-content: center;
+    padding: 10px;
+    margin-left: 4rem;
+}
 }
 .hero-do-text {
     font-size: 24px;
-}
+
 }
 
 
@@ -392,9 +397,11 @@ footer {
    .to-do{
     justify-content: center;
     padding-top: 4rem;
+    margin-left: 0;
 }
 .hero-do-text {
     font-size: 26px;
+    margin-bottom: -2rem;
 }
 
 }
