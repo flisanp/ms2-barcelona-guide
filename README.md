@@ -132,25 +132,27 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
 - Issue with previous info window not closing when clicking on a new marker.
   ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
 
-    - I found one error in consol declaring that `infoObj` was not defined, defined `var infoObj= [];`and issue was solved.
+    - I found one error in consol declaring that `infoObj` was not defined.
     ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png) ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
-
+    - Defined `var infoObj= [];`
 
 - Links in navbar was difficult to read because overlapping text on pages.
 ![menu links overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/5b2719de928c21d56b34213f628b4a3a61b8b030/readme%20assets/bugs/menu-links-overlapping.png)
    - Added the bootstrap class `bg-white` to the navbar.
 
-- Some contrasting issues where found when I tested the webpage in [A11y](https://color.a11y.com) 
-![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/contrasting-issue.png)
-
 - Menu overlapping text on the landing page when checking responsiveness on mobile
 ![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/5b2719de928c21d56b34213f628b4a3a61b8b030/readme%20assets/bugs/menu-overlapping.png)
 
 - I had some contrast issues with my design in the beginning. My image and text colors did not work well together.
+![contrasting issues](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/contrasting-issue.png)
+![contrast issues white](https://github.com/flisanp/ms2-barcelona-guide/blob/6210319c7eec2490d3b53428f0ced4bf5b4451dc/readme%20assets/bugs/contrast-issues-white.png)
     - I had to rethink my design and I changed both hero image and text color. I added an overlay on the the image and changed the text color to white and blue but I still got warnings in Wave telling me there were still low contrast between text and background. I found out that they are testing the text against the css background and not the image in case the image isn't loading.
     ![wave test](https://github.com/flisanp/ms2-barcelona-guide/blob/2825bc3a2b015e895ed93e0e7798f483941c87b0/readme%20assets/bugs/wave.png)
-    - I changed the background color with css to a dark blue and the issue was solved.
+    - I changed the background color with css to a dark blue.
 
+- Got warnings in Wave with contrast issues on my implemented weather forecast that had presets. 
+! [contrast weathermap](https://github.com/flisanp/ms2-barcelona-guide/blob/6210319c7eec2490d3b53428f0ced4bf5b4451dc/readme%20assets/bugs/contrast-weathermap.png)
+    - I had to override the presets by adding !important to css.
 
 #### HTML Testing
 https://validator.w3.org/ - No errors or warnings to show.
@@ -173,6 +175,9 @@ Warnings regarding *unused variable*: those functions are being called from the 
 
 Warning regarding *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, map, infoObj)*: I will not have the time to solve this semantic warning issue now without breaking  the code. The functionality of the code works despite this so I've decided to keep it like that for the time beeing.
 
+#### Accessibility test
+https://wave.webaim.org - No warnings to show
+![wave valid](https://github.com/flisanp/ms2-barcelona-guide/blob/6210319c7eec2490d3b53428f0ced4bf5b4451dc/readme%20assets/bugs/wave-valid.png)
 
 # Deployment
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
