@@ -147,15 +147,26 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 
 
 #### HTML Testing
-https://validator.w3.org/
+https://validator.w3.org/ - No errors or warnings to show.
+![html](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/html-valid.png)
 
 
 #### CSS Testing 
-https://jigsaw.w3.org/css-validator/
+https://jigsaw.w3.org/css-validator/ - showed 2 warnings regarding bootstrap implement.
+![css](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/css-valid.png)
 
 
 #### JS Testing
-https://jshint.com/
+https://jshint.com/ - 
+script.js ![script](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/script-js.png)
+map.js ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/map-js.png)![map](https://github.com/flisanp/ms2-barcelona-guide/blob/91de1cbecc0b7f96bf79c18700f34785ed8b6d0e/readme%20assets/bugs/map-unused.png)
+weather.js - No errors or warnings to show
+
+
+Warnings regarding *unused variable*: those functions are being called from the HTML file, so within the context of just the js file they are undefined, but they are in use by the HTML file. JShint only validates the JavaScript file and doesn't take into account that functions may be being called from outside the file.
+
+Warning regarding *Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (closeOtherInfo, map, infoObj)*: I will not have the time to solve this semantic warning issue now without breaking  the code. The functionality of the code works despite this so I've decided to keep it like that for the time beeing.
+
 
 # Deployment
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
