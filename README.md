@@ -1,6 +1,3 @@
-
-`python3 -m http.server`
-
 # Barcelona City Guide
 
 [A live version of the page can be viewed here](https://flisanp.github.io/ms2-barcelona-guide/)

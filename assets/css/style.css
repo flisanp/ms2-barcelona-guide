@@ -12,8 +12,7 @@ h1 {
   letter-spacing: 6px;
   text-transform: uppercase;
   color: #fff;
-  background-color: transparent;
-  
+  background-color: transparent; 
 }
 
 h2 {
@@ -135,6 +134,7 @@ h5 {
   color: #fff;
   text-transform: uppercase;
 }
+
 /*------------ hero to-do section ------------*/
 /*code credit for fixed width button: https://stackoverflow.com/questions/11050269/fixed-width-buttons-with-bootstrap*/
 
@@ -168,7 +168,6 @@ h5 {
   border-color: #11466A;
 }
 
-
 /*------------ map ------------*/
 
 div#map {
@@ -192,7 +191,7 @@ div#map {
 /*------------ weather ------------*/
 
 #weather-section{
-    background-color: #FFEFD6;
+  background-color: #FFEFD6;
 }
 
 .weather-text {
@@ -223,52 +222,6 @@ div#map {
   background-color: black;
 }
 
-/*------------ contact form ------------*/
-
-
-
-.form-header {
-  font-size: 22px;
-  font-weight: 300;
-  color: #11466A;
-  letter-spacing: 2px;
-}
-
-.form-sub {
-  font-size: 14px;
-  font-family: "Lora", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-  letter-spacing: 2px;
-  color: #11466A;
-}
-
-.box-size {
-  height: 100px;
-}
-
-.contact-send {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  font-size: 16px;
-  color: #fff;
-  background: #11466A;
-}
-
-#mc_embed_signup {
-    background: #fff;
-    clear: left;
-         
-}
-
-#mc_embed_signup .asterisk{
-    color: #B30000 !important;
-}
-
-#mc_embed_signup .button{
-   background: #11466A !important;  
-}
-
 /*------------ scroll to top button ------------*/
 /* code for scroll to top button: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
@@ -291,7 +244,6 @@ div#map {
 #myBtn:hover {
   background-color: #11466A;
 }
-
 
 /*------------ footer ------------*/
 
@@ -326,22 +278,6 @@ footer {
 /*------------ media queries ------------*/
 /*Device breakpoints taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
-/* If the screen size is 600px wide or less, hide the element */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-} 
-
-/* Viewports between 320px and 480px wide */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-     
-  
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -374,20 +310,16 @@ footer {
     padding: 10px;
     margin-left: 4rem;
 }
-}
 .hero-do-text {
     font-size: 24px;
-
 }
-
-
+}
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
   .hero-text {
     padding-top: 30%;
   }
-
    .to-do{
     justify-content: center;
     padding-top: 4rem;
@@ -397,6 +329,5 @@ footer {
     font-size: 26px;
     margin-bottom: -2rem;
 }
-
 }
 
