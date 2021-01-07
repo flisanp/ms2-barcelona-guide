@@ -124,6 +124,7 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
 
     - I found one error in consol declaring that `infoObj` was not defined.
     ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png) 
+    
     - Defined `var infoObj= [];`
     ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
   
@@ -158,7 +159,8 @@ https://jigsaw.w3.org/css-validator/ - showed 2 warnings regarding bootstrap pre
 
 
 #### JS Testing
-https://jshint.com/ - 
+https://jshint.com/ - showed the following warnings:
+
 ![script](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/script-js.png)
 ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/map-js.png)
 ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/map-unused.png)
