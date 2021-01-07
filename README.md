@@ -76,6 +76,7 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - [DevTools](https://developers.google.com/web/tools/chrome-devtools) - The developer has used DevTools to test responsiveness and diagnose problems. The tool **Lighthouse** has been used to improve the website's quality. 
 - [Tinypng](https://tinypng.com) - The developer used Tinypng for compressing images.
 - [Freeformatter](https://www.freeformatter.com/) - The developer used Freeformatter for beautifying the code.
+- [A11y](https://color.a11y.com) - The developer used Wave for checking the websites color contrast accessibility.
 - [Wave](https://wave.webaim.org) - The developer used Wave for checking the websites color contrast accessibility. 
 - [ResizeImage](https://resizeimage.net) - The developer used ResizeImage to resize images.
 - [Coolors](https://coolors.co) - The developer used Coolors to create color palette.
@@ -102,6 +103,10 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - Mail being sent when submitting the contact form.
 - Links to social media platforms works and opens in a new tab window.
 
+**Responsiveness**
+I manually tested the responsiveness on all available devices in DevTools. Galaxy fold didn't display well, this is something I will fix in the future.
+![galaxy fold](https://github.com/flisanp/ms2-barcelona-guide/blob/2825bc3a2b015e895ed93e0e7798f483941c87b0/readme%20assets/bugs/galaxy-fold.png)
+
 #### Testing User Stories 
 
 1. As a first time visitor to Barcelona I would like to see where the best tourist attractions are located. ![user story 1]
@@ -127,11 +132,8 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - Issue with previous info window not closing when clicking on a new marker.
   ![issue markers](https://github.com/flisanp/ms2-barcelona-guide/blob/8a4491fa0c045600c8d1a4bcaa7f92e268c14af0/readme%20assets/bugs/issue-markers.png)
 
-    - I found one error in consol declaring that `infoObj` was not defined: 
-    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png)
-
-     - Defined `var infoObj= [];`and it was solved.
-    ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
+    - I found one error in consol declaring that `infoObj` was not defined, defined `var infoObj= [];`and issue was solved.
+    ![not defined error](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-error.png) ![not defined solution](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/bugs/not-defined-solution.png)
 
 
 - Links in navbar was difficult to read because overlapping text on pages.
@@ -144,6 +146,10 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - Menu overlapping text on the landing page when checking responsiveness on mobile
 ![menu overlapping](https://github.com/flisanp/ms2-barcelona-guide/blob/5b2719de928c21d56b34213f628b4a3a61b8b030/readme%20assets/bugs/menu-overlapping.png)
 
+- I had some contrast issues with my design in the beginning. My image and text colors did not work well together.
+    - I had to rethink my design and I changed both hero image and text color. I added an overlay on the the image and changed the text color to white and blue but I still got warnings in Wave telling me there were still low contrast between text and background. I found out that they are testing the text against the css background and not the image in case the image isn't loading.
+    ![wave test](https://github.com/flisanp/ms2-barcelona-guide/blob/2825bc3a2b015e895ed93e0e7798f483941c87b0/readme%20assets/bugs/wave.png)
+    - I changed the background color with css to a dark blue and the issue was solved.
 
 
 #### HTML Testing

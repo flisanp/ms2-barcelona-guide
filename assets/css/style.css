@@ -225,13 +225,7 @@ div#map {
 
 /*------------ contact form ------------*/
 
-#form-container {
-  height: 100vh;
-  background: url("../images/barcelona-hero-contact.jpg") no-repeat bottom right fixed;
-  background-size: cover;
-  padding-top: 30px;
-  justify-content: center;
-}
+
 
 .form-header {
   font-size: 22px;
