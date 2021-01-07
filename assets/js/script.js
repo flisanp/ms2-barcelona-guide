@@ -4,6 +4,7 @@
 //scroll back to top button
 /* code taken from: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 //Get the button:
+var mybutton = [];
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -11,7 +12,7 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-var mybutton = [];
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
