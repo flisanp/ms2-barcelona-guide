@@ -24,16 +24,20 @@ This website is a city guide to Barcelona and aims to provide information about 
 
 #### User Stories
 
-1. As a first time visitor to Barcelona I would like to see where the best tourist attractions are located.
+1. As a first time visitor to Barcelona I would like to find out where the best tourist attractions are located.
+![wireframe sights](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/wireframes/home_discover.png)
 2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit.
+![wireframe hotel](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/wireframes/home_hotel.png)
 3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel.
+![wireframe restaurants](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/wireframes/map.png)
 4. As a traveller aiming to visit Barcelona I would like to see the weather forecast to better plan my packing for the trip.
+![wireframe weather](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/wireframes/weather.png)
 5. As a traveller who is planning to visit Barcelona with friends I would like to have an easy way to share the site with tips that I've found to my travel companions.
-
+![wireframe share](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/wireframes/map-share.png)
 
 #### Design 
 My main colors for the project is two different shades of blue, #11466A, and #127BF2, that are inspired by Gaudís mosaic which can be seen scattered over large parts of the city. In fact you can hardly talk about Barcelona without mentioning Gaudí and that is why I have choosen the iconic image over Parc Güell as a source for my color palette.
-![color palette](https://github.com/flisanp/ms2-barcelona-guide/blob/306b652f319e38eca892eeae085af29a2f8bad9d/readme%20assets/color-palette.jpg)
+![color palette](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/color-palette.jpg)
 I wanted the design to be easy navigated and for the user to immidately understand what the purpose of the site is. 
 I therefore choose to have a headline that clearly states that it is a travel guide to Barcelona and underneath that I have four call to action buttons with different categories depending on what you want to do in the city. The buttons are linked straight to a Google map and shows markers for different categories. Each category has it's own markers with icons that clearly states what category they have clicked so that will be no confusion when you're on the map. All markers open an info window when you click on them and in that info window you will find the name of the location followed by some further information about the place such as for instance a link to their website which will make it easy for the user to get more information about places they find interesting. When you click on a new info window the previous one closes so that the map don't gets cluttered. I wanted to map to be easy to navigate on and that is why I choose to have it in full screen. 
 I also wanted to have a weather forecast so that users can plan their packing and activities accordingly, this is located at the bottom of the page but there is also a link called WEATHER in the navbar so that users easy can find it at all time.
