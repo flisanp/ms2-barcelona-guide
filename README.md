@@ -211,8 +211,8 @@ Scroll to top button: [w3schools.com](https://www.w3schools.com/howto/howto_js_s
 
 
 #### Media
-
-- Hero Image on Home page by [Vitor Monteiro on Unsplash](https://unsplash.com/@vitorhugomonteiro) 
+- Image on landing page by [Camille Minouflet on Unsplash](https://unsplash.com/@caminouflet)
+- Image on contact page by [Vitor Monteiro on Unsplash](https://unsplash.com/@vitorhugomonteiro) 
 - Icons for markers on map from [Map icons](http://map-icons.com)
 - Favicon made by me
 
