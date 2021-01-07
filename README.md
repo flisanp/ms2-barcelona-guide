@@ -21,6 +21,7 @@ This website is a city guide to Barcelona and aims to provide information about 
 - Provide the citys weather forecast.
 - Make it easy for users to share the site.
 - Have the possibility to ask questions and to give feedback and tips to the site owner.
+![wireframe contact](https://github.com/flisanp/ms2-barcelona-guide/blob/57a6f1a9a5ecb2e169520b0763b4f5f814b56b0a/readme%20assets/wireframes/contact.png)
 
 #### User Stories
 
