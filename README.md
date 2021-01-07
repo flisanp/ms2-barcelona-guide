@@ -14,10 +14,10 @@ This website is a city guide to Barcelona and aims to provide information about 
 
 #### The Goals For This Website Is To: 
 - Be user-friendly.
-- Give users information about the best places in the city of Barcelona.
+- Give users information about the best sights in the city of Barcelona.
 - Let users know about good restaurants, shops and hotels.
 - Give users information about interesting places to visit during their stay.
-- Provide a map with markers so that users easy can navigate and find what they are looking for.
+- Provide a map with markers for users to easily navigate and find what they are looking for.
 - Provide the citys weather forecast.
 - Make it easy for users to share the site.
 - Have the possibility to ask questions and to give feedback and tips to the site owner.
@@ -38,29 +38,23 @@ This website is a city guide to Barcelona and aims to provide information about 
 #### Design 
 My main colors for the project is two different shades of blue, #11466A, and #127BF2, that are inspired by Gaudís mosaic which can be seen scattered over large parts of the city. In fact you can hardly talk about Barcelona without mentioning Gaudí and that is why I have choosen the iconic image over Parc Güell as a source for my color palette.
 ![color palette](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/color-palette.jpg)
-I wanted the design to be easy navigated and for the user to immidately understand what the purpose of the site is. 
-I therefore choose to have a headline that clearly states that it is a travel guide to Barcelona and underneath that I have four call to action buttons with different categories depending on what you want to do in the city. The buttons are linked straight to a Google map and shows markers for different categories. Each category has it's own markers with icons that clearly states what category they have clicked so that will be no confusion when you're on the map. All markers open an info window when you click on them and in that info window you will find the name of the location followed by some further information about the place such as for instance a link to their website which will make it easy for the user to get more information about places they find interesting. When you click on a new info window the previous one closes so that the map don't gets cluttered. I wanted to map to be easy to navigate on and that is why I choose to have it in full screen. 
-I also wanted to have a weather forecast so that users can plan their packing and activities accordingly, this is located at the bottom of the page but there is also a link called WEATHER in the navbar so that users easy can find it at all time.
 
-#### Wireframes
-- [Home](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/home.png)
-- [Map](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/map.png)
-- [Weather](https://github.com/flisanp/ms2-barcelona-guide/blob/dcc81e89b6d7e1616048e4a225dd56327a590af4/readme%20assets/wireframes/weather.png) 
-- [Contact](https://github.com/flisanp/ms2-barcelona-guide/blob/120ca893eb8fd8569b3f8009ffa2d828cf9aba46/readme%20assets/wireframes/contact.png)
+I wanted the design to be easyily navigated and for the user to immidately understand what the purpose of the site is. I therefore choose to have a headline that clearly states that it is a travel guide to Barcelona and underneath that I have four call to action buttons with different categories depending on what you want to do in the city. The buttons are linked straight to a Google map and shows markers for different categories. Each category has it's own markers with icons that clearly states what category that have been clicked so that there will be no confusion when they're on the map. All markers open an info window when you click on them and in that info window you will find the name of the location followed by some further information about the place such as a link to their website which will make it easy for the user to get more information about places they find interesting. When you click on a new info window the previous one closes so that the map doesn't get cluttered. I wanted the map to be easy to navigate and that is why I choose to have it in full screen. 
+I also wanted to have a weather forecast so that users can plan their packing and activities accordingly, this is located below the map but there is also a link called WEATHER in the navbar for users to easily find it at all time.
 
 # Features
 
 **Navbar** - Each page features a responsive Bootstrap navbar that’s collapsed to a burger icon when viewing on smaller screens. The navbar has an hover effect so when the user hovers over the different pages the text changes color. The same color is used to show which page the user is currently on. The navbar has links to the landing page *HOME*, the weather forecast *WEATHER* and to the contact form *CONTACT*.
 
-**Home** - The landing page features a hero image with a photo of one of Barelonas main attractions Parc Güell. On top of the photo is a heading with the text Barcelona city guide to clearly state what the site is about. 
-Underneath the heading is four *Call to action buttons* that are linked to a *Google map*. The map, which is the most significant feature on the site, is located undeneath the buttons and gives a view over Barcelona. When the user clicks on a button different *markers* appear on the map and every marker has an icon that clearly indicates which category the user is currently viewing. When the user clicks on a marker they open a *info window* where they can find the name of the location and the prime information. In every info window there is a link to the locations website so the user easy can navigate to find out more about the places they are intrested in. When you scroll down on the page a scroll to top button appears that gives the user a shortcut to the top of the page. 
+**Home** - The landing page features a hero image and on top of the image is a heading with the text "Barcelona city guide" to clearly state what the site is about. 
+Underneath the heading are four *Call to action buttons* that are linked to a *Google map*. The map, which is the most significant feature on the site, is located undeneath the buttons and gives a view over Barcelona. When the user clicks on a button different *markers* appear on the map and every marker has an icon that clearly indicates which category the user is currently viewing. When the user clicks on a marker a *info window* opens where they can find the name of the location and the prime information. In every info window there is a link to the locations website so the user easyily can find out more about the places they are interested in. When you scroll down the page a scroll to top button appears that gives the user a shortcut to the top of the page. 
 In the bottom left corner the user can find a toggle *share button* that expands when they click it and provides the user  with several ways to share the site on different social media platforms. They also have the possibility to send it by mail or to print it. 
 
-**Weather** - The *weather forecast* is located below the map and also reachable at all times through a link in the navbar. It's displaying a 7 day forecast over Barcelona with distinct icons whick gives the user an indication of what the weather will look like the following week. To the left it displays the current weather.
+**Weather** - The *weather forecast* is located below the map and also reachable at all times through a link in the navbar. It's displaying a 7 day forecast over Barcelona with distinct icons which gives the user an indication of what the weather will look like the following week. To the left it displays the current weather.
 
-**Contact** - The *contact form* is reachable through the navbar at all times. The user can give feedback, tips or ask questions and when filled out properly it will send an email to the site owner through Mailchimp.
+**Contact** - The *contact form* is reachable below the weather forecast and also through the navbar at all times. The user can give feedback, tips or ask questions and when filled out properly it will send an email to the site owner through Mailchimp.
 
-**Footer** - Exists on the bottom of every page. Located in the center of the footer are four icons with links to the sites social media platforms. The links have the same hover effects as the navbar and changes color when hovering over them.
+**Footer** - Exists on the bottom of every page. Located in the center of the footer are four icons with links to the sites social media platforms. The links have the same hover effects as the navbar and changes color as you hover over them.
 
 #### Features Left To Implement
 Even though I wanted to have a clean site where you'll just find the top picks in every category there could be many more features added to provide the user with more functionality and to simplify their planning, for instance: 
