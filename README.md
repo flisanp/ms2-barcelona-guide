@@ -159,9 +159,9 @@ https://jigsaw.w3.org/css-validator/ - showed 2 warnings regarding bootstrap pre
 
 #### JS Testing
 https://jshint.com/ - 
-weather.js - No errors or warnings to show
-script.js ![script](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/script-js.png)
-map.js ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/map-js.png)![map](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/map-unused.png)
+![script](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/script-js.png)
+![map](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/map-js.png)
+![map](https://github.com/flisanp/ms2-barcelona-guide/blob/master/readme%20assets/bugs/map-unused.png)
 
 Warnings regarding *unused variable*: those functions are being called from the HTML file, so within the context of just the js file they are undefined, but they are in use by the HTML file. JShint only validates the JavaScript file and doesn't take into account that functions may be being called from outside the file.
 
