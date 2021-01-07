@@ -5,7 +5,7 @@
 
 [A live version of the page can be viewed here](https://flisanp.github.io/ms2-barcelona-guide/)
 
-![mockup image]
+![mockup image](https://github.com/flisanp/ms2-barcelona-guide/blob/e4eda1e7e7460d614dd317749dc9e6cfceb02e17/readme%20assets/mockup-image.png)
 
 This website is a city guide to Barcelona and aims to provide information about the city to users who are planning to visit or are currently visiting Barcelona. Users can navigate through Google Maps to get top picks for restaurants, tourist attractions, hotels and shops.
 
@@ -109,9 +109,9 @@ I manually tested the responsiveness on all available devices in DevTools. Galax
 
 #### Testing User Stories 
 
-1. As a first time visitor to Barcelona I would like to see where the best tourist attractions are located. ![user story 1](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/discover.png) ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/discover-map.png)
+1. As a first time visitor to Barcelona I would like to see where the best tourist attractions are located. ![user story 1](https://github.com/flisanp/ms2-barcelona-guide/blob/e4eda1e7e7460d614dd317749dc9e6cfceb02e17/readme%20assets/user%20stories/discover.png) ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/discover-map.png)
     - On the landing page is a call to action button that says "DISCOVER" which leads you to the map that shows markers for the  different locations. The user can click on each marker which opens a info window where the user can find the main information and be directed to a website for further reading.
-2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit. ![user story 2](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/sleep.png) ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/sleep-map.png)
+2. As a traveller who is planning to visit Barcelona I would like to find a good hotel for my visit. ![user story 2](https://github.com/flisanp/ms2-barcelona-guide/blob/e4eda1e7e7460d614dd317749dc9e6cfceb02e17/readme%20assets/user%20stories/sleep.png) ![map](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/sleep-map.png)
     - On the landing page is a call to action button that says "SLEEP" which leads you to the map that shows markers for different hotels. The user can click on each marker which opens a info window where the user can find the main information and be directed to a website for further reading.
 3. As a traveller visiting Barcelona I would like to see a map over the city to find out if there’s any restaurants located close to my hotel. ![user story 3](https://github.com/flisanp/ms2-barcelona-guide/blob/bd065637704be796aedd247864589655ba39dda9/readme%20assets/user%20stories/eat-map.png)
     - On the landing page is a call to action button that says "EAT" which leads you to the map that shows markers for different hotels. The user can click on each marker which opens a info window where the user can find the main information and be directed to a website for further reading.
