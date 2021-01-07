@@ -80,7 +80,7 @@ Even though I wanted to have a clean site where you'll just find the top picks i
 - [Wave](https://wave.webaim.org) - The developer used Wave for checking the websites color contrast accessibility. 
 - [ResizeImage](https://resizeimage.net) - The developer used ResizeImage to resize images.
 - [Coolors](https://coolors.co) - The developer used Coolors to create color palette.
-- [Am I Responsive?](http://ami.responsivedesign.is/) - The developer used Am I Responsive? for creating the mockup image in the beginning of this README file.
+- [Techsini](https://techsini.com/multi-mockup/index.php) - The developer used Techsini for creating the mockup image in the beginning of this README file.
 - [InDesign](https://www.adobe.com/se/products/indesign.html) The developer used InDesign for creating the favicon.
 - [Addthis](https://www.addthis.com) The developer used Addthis for the toggle share button.
 - [Mailchimp](https://mailchimp.com) The developer used Mailchimp to create the contact form.
