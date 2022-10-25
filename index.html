@@ -27,12 +27,14 @@
             </button>
             <!-- nav bar links -->
             <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+               <!-- logo -->
+         <a class="navbar-brand" href="index.html">
+            <img src="assets/images/B.png" width="50" height="50" alt="Barcelona logo">
+            </a>
                <ul class="navbar-nav ml-auto">
+                  
                   <li class="nav-item">
-                     <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#weather-section">Weather</a>
+                     <a class="nav-link" href="#weather-section">Weather Forecast <i class="fa fa-solid fa-cloud-sun"></i></a>
                   </li>
                </ul>
             </div>
@@ -86,7 +88,7 @@
       <!-- weather forecast -->
       <div class="container-fluid" id="weather-section">
          <div class="row">
-            <div class="col-sm col-lg-6">
+            <div class="col-sm col-lg-8 mx-auto">
                <section class="jumbotron">
                   <h3 class="weather-text">7 day weather forecast</h3>
                   <div class="weatherWidget"></div>
